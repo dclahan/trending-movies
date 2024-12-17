@@ -1,0 +1,387 @@
+2024-12-15 13:43:28,594 INFO: ---------------- Logger started ----------------
+2024-12-15 13:43:28,594 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/databases/stream.db
+2024-12-15 13:43:28,596 INFO: Connected to the database successfully
+2024-12-15 13:43:28,598 INFO: Table reddit_posts has 85 rows
+2024-12-15 13:43:28,728 INFO: 397 phrases are defined for tracking tweets
+2024-12-15 13:43:28,728 INFO: Track phrases for tweets:
+2024-12-15 13:43:28,728 INFO: ['venomthelastdance', 'moana2', 'elevation', 'absolution', 'armor', 'watchmenchapterii', 'sidelinedtheqbandme', 'miraculousworldlondonattheedgeoftime', 'gladiatorii', 'thewildrobot', 'wicked', 'redone', 'kraventhehunter', 'thesubstance', 'smile2', 'terrifier3', 'alienromulus', 'apocalypsezthebeginningoftheend', 'deadpoolwolverine', 'sikandarkamuqaddar', 'sololevelingreawakening', 'thatchristmas', 'levels', 'insideout2', 'transformersone', 'gtmax', 'despicableme4', 'pimpinerobloodandoil', 'arenawars', 'huntingwithtigers', 'mufasathelionking', 'classified', 'spellbound', 'myfault', 'dearsanta', 'juror2', 'arcadian', 'survive', 'wakeup', 'weekendintaipei', 'moana', 'azrael', 'weliveintime', 'venom', 'pdemeloquequieras', 'venomlettherebecarnage', 'subservience', 'thecountofmontecristo', 'dominique', 'japanesemom', 'remnant', 'overlordthesacredkingdom', 'badboysrideordie', 'howthegrinchstolechristmas', 'thecrow', 'cashout', 'sonicthehedgehog3', 'flow', 'thegrinch', 'thesouleater', 'homealone2lostinnewyork', 'togefilmmeimei', 'thelordoftheringsthewaroftherohirrim', 'skinlikesun', 'themoor', 'culpatuya', 'knoxgoesaway', 'whisperofthewitch', 'pushpa2therule', 'avengersinfinitywar', 'shrek', 'thehauntingoftheimmaculatenurse', 'heretic', 'bagman', 'theplatform2', 'mygrandfathersdemons', 'kingdomoftheplanetoftheapes', 'jokerfoliedeux', 'analmostchristmasstory', 'beetlejuicebeetlejuice', 'kungfupanda4', 'furiosaamadmaxsaga', 'singthriller', 'spidermanacrossthespiderverse', 'interstellar', 'harrypotterandthephilosophersstone', 'ourlittlesecret', 'thegarfieldmovie', 'battleforthewesternfront', 'shrek2', 'freedom', 'duneparttwo', 'canaryblack', 'fastx', 'itendswithus', 'lastas', 'gladiator', 'pleasure', 'transformersriseofthebeasts', 'borderlands', 'transmorphersmechbeasts', 'terrifier2', 'emiliaprez', 'nutcrackers', 'dontmove', '365daysthisday', 'conclave', 'spidermannowayhome', 'twisters', 'theflesh', 'myheroacademiayourenext', 'godzillaxkongthenewempire', 'mary', 'migration', 'donotenter', 'spongebobsquarepantskreepawaykamp', 'jackintimeforchristmas', 'projectsilence', 'barbie', 'fiftyshadesofgrey', 'coco', 'theshadowstrays', 'christmasiscancelled', 'thegodfather', 'wonka', 'takecover', 'anonsensechristmaswithsabrinacarpenter', 'johnwickchapter4', 'bluelockthemovieepisodenagi', 'thebadguyshauntedheist', 'leclitoris', 'pussinbootsthelastwish', 'monstersummer', 'thechroniclesofnarniathelionthewitchandthewardrobe', 'paprika', 'thesnowsister', 'harrypotterandthechamberofsecrets', 'elyas', 'hijack1971', 'brothers', 'prey', 'casinoroyale', 'femaleteacherinfrontofthestudents', 'operationblackops', 'apartment7a', 'sonicthehedgehog2', 'neverletgo', 'myoldass', 'thesilenthour', 'aquietplacedayone', '1978', 'harrypotterandtheprisonerofazkaban', 'anora', 'titanic', 'speaknoevil', 'harrypotterandthedeathlyhallowspart2', 'roadhouse', 'oppenheimer', 'thesupermariobrosmovie', 'topgunmaverick', 'dune', 'harrypotterandthegobletoffire', 'theshawshankredemption', 'civilwar', 'dragonkeeper', 'thebeekeeper', 'theministryofungentlemanlywarfare', 'thedarkknight', 'pulpfiction', 'miraculousworldparistalesofshadybugandclawnoir', 'biggestheistever', 'thelordoftheringsthefellowshipofthering', 'se7en', 'savingbikinibottomthesandycheeksmovie', 'thehobbitthebattleofthefivearmies', 'amityvillewheretheecholives', 'fmarrykill', 'harrypotterandthedeathlyhallowspart1', 'theconvert', 'theequalizer', 'winniethepoohbloodandhoney2', 'twilightofthewarriorswalledin', 'wrathofman', 'here', 'porno', 'encanto', 'purposeoftutoring', 'lastnightatterracelanes', 'younghearts', 'descendantstheriseofred', 'alien', 'belowhermouth', 'thekillersgame', 'thehangover', 'krampus', 'longlegs', 'kalikot', 'hellboythecrookedman', 'timecut', 'diabolikwhoareyou', 'thecantervilleghost', 'howtotrainyourdragon2', '10lives', 'thelionking', 'megalopolis', 'smile', 'themazerunner', 'godzillaminusone', 'missionimpossibledeadreckoningpartone', 'thegigolo', 'fury', 'harrypotterandthehalfbloodprince', 'thelionking', 'djangounchained', 'insideout', 'avatarthewayofwater', 'thenext365days', 'harrypotterandtheorderofthephoenix', 'shangchiandthelegendofthetenrings', 'campcrasher', 'strangedarling', 'joker', 'cheeky', 'inception', 'thelordoftheringsthereturnoftheking', 'madameweb', 'frozen', 'killemall2', 'monstersinc', 'gunner', 'moana', 'theideaofyou', 'pacificrim', 'thepolarexpress', 'howtotrainyourdragonthehiddenworld', 'madagascar', 'thebatman', 'moana', 'salome', 'rebelridge', 'letgo', 'wantedman', 'thenightmarebeforechristmas', 'doubleblind', 'fightclub', 'smugglers', 'bangkokbreakingheavenandhell', 'luck', 'spiderman', 'piratesofthecaribbeanthecurseoftheblackpearl', 'avatar', 'bighero6', 'theequalizer3', 'fiftyshadesfreed', 'bosomymom', 'brooklyn45', 'terrifier', 'howtotrainyourdragon', 'redeeminglove', 'benhur', 'despicableme', 'umamusumeprettyderbybeginningofanewera', 'thenurseonamilitarytour', 'meg2thetrench', 'emmanuelle', 'ultramanrising', 'lookback', 'toystory', 'oddity', 'challengers', 'thetomorrowwar', 'meetmenextchristmas', 'theflash', 'expend4bles', 'wolfs', 'taken2', 'bladerunner2049', 'thecreator', 'elemental', 'avengersendgame', 'theavengers', 'houndsofwar', 'carryon', 'bagoflies', 'deadpool', 'yourname', 'christmasonwindmillway', 'mononokethemoviethephantomintherain', 'uprising', 'aquamanandthelostkingdom', 'thechildrenstrain', 'dakaichiimbeingharassedbythesexiestmanoftheyearthemovieinspain', 'thesmileofthefox', 'thechristmaschroniclesparttwo', 'catchmeifyoucan', 'theinseparables', 'zacksnydersjusticeleague', 'anyonebutyou', 'zuzubalndiaofilme', 'tangled', 'transformersageofextinction', 'haroldandthepurplecrayon', 'mayhem', 'privateschool', 'underparis', 'theloft', 'outside', 'thelordoftheringsthetwotowers', 'scream', 'piratesofthecaribbeandeadmanschest', 'abigail', 'nationallampoonschristmasvacation', 'playingwithlove', 'bigcitygreensthemoviespacecation', 'thematrix', 'lift', 'aminecraftmovie', 'bustygirlfriend', 'trouble', 'thewolfofwallstreet', 'coraline', 'aliens', 'creediii', 'corpsebride', 'findingnemo', 'spidermanhomecoming', 'kill', 'rita', 'parasite', 'anna', 'wish', 'thechristmaschronicles', 'jonipatadeconejo', 'hacksawridge', 'diehard', 'reuniongoalsthebeginning', 'johnwickchapter3parabellum', 'twasthetextbeforechristmas', 'meangirls', 'blitz', 'americansniper', 'drawingcloser', 'thevoyeur', 'suspicion', 'thetunneltosummertheexitofgoodbyes', 'defyinggravitythecurtainrisesonwicked', 'johnwickchapter2', 'ratatouille', 'piratesofthecaribbeanonstrangertides', 'spiderman3', 'queenofhearts', 'creedii', 'achristmascarol', 'theunion', 'after', '10daysofacuriousman', 'readyplayerone', 'taken', 'trap', 'starwars', 'guardiansofthegalaxyvol3', 'aftereverything', 'dungeonsdragonshonoramongthieves', 'virgo', 'themarvels', 'jaws', 'chappie', 'nowayup', 'latenightwiththedevil', 'transformersthelastknight', 'thelittlemermaid', 'granturismo', 'throughmywindow', 'leggingsmania', 'flymetothemoon', 'theemptyman', 'blinktwice', 'hiddenface', '1992', 'anidealfather', 'meangirls', 'womanofthehour', 'andmrs', 'thegodfatherpartii', 'alienoid', 'blackpantherwakandaforever', 'poorthings', 'thefallguy', 'infinite', 'theequalizer2', 'spirited', 'privatecall', 'zootopia', 'killingromance', 'bloodfordust', 'justiceleaguecrisisoninfiniteearthspartthree', 'monkeyman']
+2024-12-15 13:43:28,728 INFO: Reddit stream listener is initialized
+2024-12-15 13:43:28,728 INFO: Starting the Reddit stream
+2024-12-15 13:43:29,982 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:43:31,443 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:43:31,444 INFO: The Reddit stream disconnected
+2024-12-15 13:45:01,497 INFO: Reddit stream listener is initialized
+2024-12-15 13:45:01,497 INFO: Starting the Reddit stream
+2024-12-15 13:45:02,527 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:45:02,584 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:45:02,584 ERROR: Post 1hbpzx2 could not be inserted into the table
+2024-12-15 13:45:02,586 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:45:02,586 ERROR: Post 1hbykcv could not be inserted into the table
+2024-12-15 13:45:02,603 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:45:02,603 ERROR: Post 1hcpnw6 could not be inserted into the table
+2024-12-15 13:45:03,560 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:45:03,561 INFO: The Reddit stream disconnected
+2024-12-15 13:46:39,997 INFO: Reddit stream listener is initialized
+2024-12-15 13:46:39,998 INFO: Starting the Reddit stream
+2024-12-15 13:46:41,055 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:46:41,061 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,061 ERROR: Post 1h1st54 could not be inserted into the table
+2024-12-15 13:46:41,065 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,066 ERROR: Post 1h1v2au could not be inserted into the table
+2024-12-15 13:46:41,075 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,075 ERROR: Post 1h26zxe could not be inserted into the table
+2024-12-15 13:46:41,097 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,097 ERROR: Post 1h4gjof could not be inserted into the table
+2024-12-15 13:46:41,098 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,098 ERROR: Post 1h4nffo could not be inserted into the table
+2024-12-15 13:46:41,106 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,106 ERROR: Post 1h5cr0t could not be inserted into the table
+2024-12-15 13:46:41,110 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,110 ERROR: Post 1h693t6 could not be inserted into the table
+2024-12-15 13:46:41,112 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,112 ERROR: Post 1h6di2w could not be inserted into the table
+2024-12-15 13:46:41,127 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,127 ERROR: Post 1h7na3n could not be inserted into the table
+2024-12-15 13:46:41,131 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,131 ERROR: Post 1h84ocb could not be inserted into the table
+2024-12-15 13:46:41,143 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,143 ERROR: Post 1h8fmem could not be inserted into the table
+2024-12-15 13:46:41,146 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,146 ERROR: Post 1h8xrwd could not be inserted into the table
+2024-12-15 13:46:41,152 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,152 ERROR: Post 1h9kl29 could not be inserted into the table
+2024-12-15 13:46:41,155 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,155 ERROR: Post 1h9mt3l could not be inserted into the table
+2024-12-15 13:46:41,160 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,160 ERROR: Post 1ha00bl could not be inserted into the table
+2024-12-15 13:46:41,165 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,165 ERROR: Post 1ha44qq could not be inserted into the table
+2024-12-15 13:46:41,176 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,176 ERROR: Post 1hbztnn could not be inserted into the table
+2024-12-15 13:46:41,182 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:46:41,182 ERROR: Post 1hcphno could not be inserted into the table
+2024-12-15 13:46:41,410 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:46:41,411 INFO: The Reddit stream disconnected
+2024-12-15 13:48:11,496 INFO: Reddit stream listener is initialized
+2024-12-15 13:48:11,497 INFO: Starting the Reddit stream
+2024-12-15 13:48:13,592 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:48:13,595 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:48:13,595 ERROR: Post 1hbw5xv could not be inserted into the table
+2024-12-15 13:48:13,603 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:48:13,603 ERROR: Post 1hc1jw3 could not be inserted into the table
+2024-12-15 13:48:13,614 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:48:13,615 ERROR: Post 1hc46m5 could not be inserted into the table
+2024-12-15 13:48:14,121 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:48:14,122 INFO: The Reddit stream disconnected
+2024-12-15 13:49:44,151 INFO: Reddit stream listener is initialized
+2024-12-15 13:49:44,151 INFO: Starting the Reddit stream
+2024-12-15 13:49:45,377 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:51:42,590 INFO: ---------------- Logger started ----------------
+2024-12-15 13:51:42,592 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/databases/stream.db
+2024-12-15 13:51:42,593 INFO: Connected to the database successfully
+2024-12-15 13:51:42,593 INFO: Table reddit_posts has 137 rows
+2024-12-15 13:51:42,601 INFO: 397 phrases are defined for tracking tweets
+2024-12-15 13:51:42,601 INFO: Track phrases for tweets:
+2024-12-15 13:51:42,601 INFO: ['venomthelastdance', 'moana2', 'elevation', 'absolution', 'armor', 'watchmenchapterii', 'sidelinedtheqbandme', 'miraculousworldlondonattheedgeoftime', 'gladiatorii', 'thewildrobot', 'wicked', 'redone', 'kraventhehunter', 'thesubstance', 'smile2', 'terrifier3', 'alienromulus', 'apocalypsezthebeginningoftheend', 'deadpoolwolverine', 'sikandarkamuqaddar', 'sololevelingreawakening', 'thatchristmas', 'levels', 'insideout2', 'transformersone', 'gtmax', 'despicableme4', 'pimpinerobloodandoil', 'arenawars', 'huntingwithtigers', 'mufasathelionking', 'classified', 'spellbound', 'myfault', 'dearsanta', 'juror2', 'arcadian', 'survive', 'wakeup', 'weekendintaipei', 'moana', 'azrael', 'weliveintime', 'venom', 'pdemeloquequieras', 'venomlettherebecarnage', 'subservience', 'thecountofmontecristo', 'dominique', 'japanesemom', 'remnant', 'overlordthesacredkingdom', 'badboysrideordie', 'howthegrinchstolechristmas', 'thecrow', 'cashout', 'sonicthehedgehog3', 'flow', 'thegrinch', 'thesouleater', 'homealone2lostinnewyork', 'togefilmmeimei', 'thelordoftheringsthewaroftherohirrim', 'skinlikesun', 'themoor', 'culpatuya', 'knoxgoesaway', 'whisperofthewitch', 'pushpa2therule', 'avengersinfinitywar', 'shrek', 'thehauntingoftheimmaculatenurse', 'heretic', 'bagman', 'theplatform2', 'mygrandfathersdemons', 'kingdomoftheplanetoftheapes', 'jokerfoliedeux', 'analmostchristmasstory', 'beetlejuicebeetlejuice', 'kungfupanda4', 'furiosaamadmaxsaga', 'singthriller', 'spidermanacrossthespiderverse', 'interstellar', 'harrypotterandthephilosophersstone', 'ourlittlesecret', 'thegarfieldmovie', 'battleforthewesternfront', 'shrek2', 'freedom', 'duneparttwo', 'canaryblack', 'fastx', 'itendswithus', 'lastas', 'gladiator', 'pleasure', 'transformersriseofthebeasts', 'borderlands', 'transmorphersmechbeasts', 'terrifier2', 'emiliaprez', 'nutcrackers', 'dontmove', '365daysthisday', 'conclave', 'spidermannowayhome', 'twisters', 'theflesh', 'myheroacademiayourenext', 'godzillaxkongthenewempire', 'mary', 'migration', 'donotenter', 'spongebobsquarepantskreepawaykamp', 'jackintimeforchristmas', 'projectsilence', 'barbie', 'fiftyshadesofgrey', 'coco', 'theshadowstrays', 'christmasiscancelled', 'thegodfather', 'wonka', 'takecover', 'anonsensechristmaswithsabrinacarpenter', 'johnwickchapter4', 'bluelockthemovieepisodenagi', 'thebadguyshauntedheist', 'leclitoris', 'pussinbootsthelastwish', 'monstersummer', 'thechroniclesofnarniathelionthewitchandthewardrobe', 'paprika', 'thesnowsister', 'harrypotterandthechamberofsecrets', 'elyas', 'hijack1971', 'brothers', 'prey', 'casinoroyale', 'femaleteacherinfrontofthestudents', 'operationblackops', 'apartment7a', 'sonicthehedgehog2', 'neverletgo', 'myoldass', 'thesilenthour', 'aquietplacedayone', '1978', 'harrypotterandtheprisonerofazkaban', 'anora', 'titanic', 'speaknoevil', 'harrypotterandthedeathlyhallowspart2', 'roadhouse', 'oppenheimer', 'thesupermariobrosmovie', 'topgunmaverick', 'dune', 'harrypotterandthegobletoffire', 'theshawshankredemption', 'civilwar', 'dragonkeeper', 'thebeekeeper', 'theministryofungentlemanlywarfare', 'thedarkknight', 'pulpfiction', 'miraculousworldparistalesofshadybugandclawnoir', 'biggestheistever', 'thelordoftheringsthefellowshipofthering', 'se7en', 'savingbikinibottomthesandycheeksmovie', 'thehobbitthebattleofthefivearmies', 'amityvillewheretheecholives', 'fmarrykill', 'harrypotterandthedeathlyhallowspart1', 'theconvert', 'theequalizer', 'winniethepoohbloodandhoney2', 'twilightofthewarriorswalledin', 'wrathofman', 'here', 'porno', 'encanto', 'purposeoftutoring', 'lastnightatterracelanes', 'younghearts', 'descendantstheriseofred', 'alien', 'belowhermouth', 'thekillersgame', 'thehangover', 'krampus', 'longlegs', 'kalikot', 'hellboythecrookedman', 'timecut', 'diabolikwhoareyou', 'thecantervilleghost', 'howtotrainyourdragon2', '10lives', 'thelionking', 'megalopolis', 'smile', 'themazerunner', 'godzillaminusone', 'missionimpossibledeadreckoningpartone', 'thegigolo', 'fury', 'harrypotterandthehalfbloodprince', 'thelionking', 'djangounchained', 'insideout', 'avatarthewayofwater', 'thenext365days', 'harrypotterandtheorderofthephoenix', 'shangchiandthelegendofthetenrings', 'campcrasher', 'strangedarling', 'joker', 'cheeky', 'inception', 'thelordoftheringsthereturnoftheking', 'madameweb', 'frozen', 'killemall2', 'monstersinc', 'gunner', 'moana', 'theideaofyou', 'pacificrim', 'thepolarexpress', 'howtotrainyourdragonthehiddenworld', 'madagascar', 'thebatman', 'moana', 'salome', 'rebelridge', 'letgo', 'wantedman', 'thenightmarebeforechristmas', 'doubleblind', 'fightclub', 'smugglers', 'bangkokbreakingheavenandhell', 'luck', 'spiderman', 'piratesofthecaribbeanthecurseoftheblackpearl', 'avatar', 'bighero6', 'theequalizer3', 'fiftyshadesfreed', 'bosomymom', 'brooklyn45', 'terrifier', 'howtotrainyourdragon', 'redeeminglove', 'benhur', 'despicableme', 'umamusumeprettyderbybeginningofanewera', 'thenurseonamilitarytour', 'meg2thetrench', 'emmanuelle', 'ultramanrising', 'lookback', 'toystory', 'oddity', 'challengers', 'thetomorrowwar', 'meetmenextchristmas', 'theflash', 'expend4bles', 'wolfs', 'taken2', 'bladerunner2049', 'thecreator', 'elemental', 'avengersendgame', 'theavengers', 'houndsofwar', 'carryon', 'bagoflies', 'deadpool', 'yourname', 'christmasonwindmillway', 'mononokethemoviethephantomintherain', 'uprising', 'aquamanandthelostkingdom', 'thechildrenstrain', 'dakaichiimbeingharassedbythesexiestmanoftheyearthemovieinspain', 'thesmileofthefox', 'thechristmaschroniclesparttwo', 'catchmeifyoucan', 'theinseparables', 'zacksnydersjusticeleague', 'anyonebutyou', 'zuzubalndiaofilme', 'tangled', 'transformersageofextinction', 'haroldandthepurplecrayon', 'mayhem', 'privateschool', 'underparis', 'theloft', 'outside', 'thelordoftheringsthetwotowers', 'scream', 'piratesofthecaribbeandeadmanschest', 'abigail', 'nationallampoonschristmasvacation', 'playingwithlove', 'bigcitygreensthemoviespacecation', 'thematrix', 'lift', 'aminecraftmovie', 'bustygirlfriend', 'trouble', 'thewolfofwallstreet', 'coraline', 'aliens', 'creediii', 'corpsebride', 'findingnemo', 'spidermanhomecoming', 'kill', 'rita', 'parasite', 'anna', 'wish', 'thechristmaschronicles', 'jonipatadeconejo', 'hacksawridge', 'diehard', 'reuniongoalsthebeginning', 'johnwickchapter3parabellum', 'twasthetextbeforechristmas', 'meangirls', 'blitz', 'americansniper', 'drawingcloser', 'thevoyeur', 'suspicion', 'thetunneltosummertheexitofgoodbyes', 'defyinggravitythecurtainrisesonwicked', 'johnwickchapter2', 'ratatouille', 'piratesofthecaribbeanonstrangertides', 'spiderman3', 'queenofhearts', 'creedii', 'achristmascarol', 'theunion', 'after', '10daysofacuriousman', 'readyplayerone', 'taken', 'trap', 'starwars', 'guardiansofthegalaxyvol3', 'aftereverything', 'dungeonsdragonshonoramongthieves', 'virgo', 'themarvels', 'jaws', 'chappie', 'nowayup', 'latenightwiththedevil', 'transformersthelastknight', 'thelittlemermaid', 'granturismo', 'throughmywindow', 'leggingsmania', 'flymetothemoon', 'theemptyman', 'blinktwice', 'hiddenface', '1992', 'anidealfather', 'meangirls', 'womanofthehour', 'andmrs', 'thegodfatherpartii', 'alienoid', 'blackpantherwakandaforever', 'poorthings', 'thefallguy', 'infinite', 'theequalizer2', 'spirited', 'privatecall', 'zootopia', 'killingromance', 'bloodfordust', 'justiceleaguecrisisoninfiniteearthspartthree', 'monkeyman']
+2024-12-15 13:51:42,601 INFO: Reddit stream listener is initialized
+2024-12-15 13:51:42,601 INFO: Starting the Reddit stream
+2024-12-15 13:51:44,928 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:51:44,964 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:44,964 ERROR: Post 1hea6bu could not be inserted into the table
+2024-12-15 13:51:44,983 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:44,983 ERROR: Post 1hecgwk could not be inserted into the table
+2024-12-15 13:51:44,985 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:44,985 ERROR: Post 1hecihb could not be inserted into the table
+2024-12-15 13:51:44,986 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:44,987 ERROR: Post 1hecp55 could not be inserted into the table
+2024-12-15 13:51:45,022 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,022 ERROR: Post 1hei3tt could not be inserted into the table
+2024-12-15 13:51:45,036 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,036 ERROR: Post 1heijcx could not be inserted into the table
+2024-12-15 13:51:45,037 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,037 ERROR: Post 1heivyp could not be inserted into the table
+2024-12-15 13:51:45,048 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,048 ERROR: Post 1helwj3 could not be inserted into the table
+2024-12-15 13:51:45,056 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,056 ERROR: Post 1hen4vi could not be inserted into the table
+2024-12-15 13:51:45,057 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,057 ERROR: Post 1henaek could not be inserted into the table
+2024-12-15 13:51:45,072 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,072 ERROR: Post 1heo9de could not be inserted into the table
+2024-12-15 13:51:45,075 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,075 ERROR: Post 1heom82 could not be inserted into the table
+2024-12-15 13:51:45,091 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,091 ERROR: Post 1heq335 could not be inserted into the table
+2024-12-15 13:51:45,094 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,095 ERROR: Post 1hequ81 could not be inserted into the table
+2024-12-15 13:51:45,097 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,097 ERROR: Post 1herpgk could not be inserted into the table
+2024-12-15 13:51:45,100 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,100 ERROR: Post 1herzsr could not be inserted into the table
+2024-12-15 13:51:45,117 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,117 ERROR: Post 1hetrq0 could not be inserted into the table
+2024-12-15 13:51:45,122 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,122 ERROR: Post 1hettl9 could not be inserted into the table
+2024-12-15 13:51:45,152 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,152 ERROR: Post 1hewzda could not be inserted into the table
+2024-12-15 13:51:45,157 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,157 ERROR: Post 1hexn08 could not be inserted into the table
+2024-12-15 13:51:45,158 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,158 ERROR: Post 1hexuur could not be inserted into the table
+2024-12-15 13:51:45,163 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,163 ERROR: Post 1heyb2s could not be inserted into the table
+2024-12-15 13:51:45,164 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:51:45,164 ERROR: Post 1heye7x could not be inserted into the table
+2024-12-15 13:51:45,167 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:51:45,168 INFO: The Reddit stream disconnected
+2024-12-15 13:52:05,479 INFO: ---------------- Logger started ----------------
+2024-12-15 13:52:05,479 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/databases/stream.db
+2024-12-15 13:52:05,480 INFO: Connected to the database successfully
+2024-12-15 13:52:05,480 INFO: Table reddit_posts has 137 rows
+2024-12-15 13:52:05,486 INFO: 397 phrases are defined for tracking tweets
+2024-12-15 13:52:05,486 INFO: Track phrases for tweets:
+2024-12-15 13:52:05,486 INFO: ['venomthelastdance', 'moana2', 'elevation', 'absolution', 'armor', 'watchmenchapterii', 'sidelinedtheqbandme', 'miraculousworldlondonattheedgeoftime', 'gladiatorii', 'thewildrobot', 'wicked', 'redone', 'kraventhehunter', 'thesubstance', 'smile2', 'terrifier3', 'alienromulus', 'apocalypsezthebeginningoftheend', 'deadpoolwolverine', 'sikandarkamuqaddar', 'sololevelingreawakening', 'thatchristmas', 'levels', 'insideout2', 'transformersone', 'gtmax', 'despicableme4', 'pimpinerobloodandoil', 'arenawars', 'huntingwithtigers', 'mufasathelionking', 'classified', 'spellbound', 'myfault', 'dearsanta', 'juror2', 'arcadian', 'survive', 'wakeup', 'weekendintaipei', 'moana', 'azrael', 'weliveintime', 'venom', 'pdemeloquequieras', 'venomlettherebecarnage', 'subservience', 'thecountofmontecristo', 'dominique', 'japanesemom', 'remnant', 'overlordthesacredkingdom', 'badboysrideordie', 'howthegrinchstolechristmas', 'thecrow', 'cashout', 'sonicthehedgehog3', 'flow', 'thegrinch', 'thesouleater', 'homealone2lostinnewyork', 'togefilmmeimei', 'thelordoftheringsthewaroftherohirrim', 'skinlikesun', 'themoor', 'culpatuya', 'knoxgoesaway', 'whisperofthewitch', 'pushpa2therule', 'avengersinfinitywar', 'shrek', 'thehauntingoftheimmaculatenurse', 'heretic', 'bagman', 'theplatform2', 'mygrandfathersdemons', 'kingdomoftheplanetoftheapes', 'jokerfoliedeux', 'analmostchristmasstory', 'beetlejuicebeetlejuice', 'kungfupanda4', 'furiosaamadmaxsaga', 'singthriller', 'spidermanacrossthespiderverse', 'interstellar', 'harrypotterandthephilosophersstone', 'ourlittlesecret', 'thegarfieldmovie', 'battleforthewesternfront', 'shrek2', 'freedom', 'duneparttwo', 'canaryblack', 'fastx', 'itendswithus', 'lastas', 'gladiator', 'pleasure', 'transformersriseofthebeasts', 'borderlands', 'transmorphersmechbeasts', 'terrifier2', 'emiliaprez', 'nutcrackers', 'dontmove', '365daysthisday', 'conclave', 'spidermannowayhome', 'twisters', 'theflesh', 'myheroacademiayourenext', 'godzillaxkongthenewempire', 'mary', 'migration', 'donotenter', 'spongebobsquarepantskreepawaykamp', 'jackintimeforchristmas', 'projectsilence', 'barbie', 'fiftyshadesofgrey', 'coco', 'theshadowstrays', 'christmasiscancelled', 'thegodfather', 'wonka', 'takecover', 'anonsensechristmaswithsabrinacarpenter', 'johnwickchapter4', 'bluelockthemovieepisodenagi', 'thebadguyshauntedheist', 'leclitoris', 'pussinbootsthelastwish', 'monstersummer', 'thechroniclesofnarniathelionthewitchandthewardrobe', 'paprika', 'thesnowsister', 'harrypotterandthechamberofsecrets', 'elyas', 'hijack1971', 'brothers', 'prey', 'casinoroyale', 'femaleteacherinfrontofthestudents', 'operationblackops', 'apartment7a', 'sonicthehedgehog2', 'neverletgo', 'myoldass', 'thesilenthour', 'aquietplacedayone', '1978', 'harrypotterandtheprisonerofazkaban', 'anora', 'titanic', 'speaknoevil', 'harrypotterandthedeathlyhallowspart2', 'roadhouse', 'oppenheimer', 'thesupermariobrosmovie', 'topgunmaverick', 'dune', 'harrypotterandthegobletoffire', 'theshawshankredemption', 'civilwar', 'dragonkeeper', 'thebeekeeper', 'theministryofungentlemanlywarfare', 'thedarkknight', 'pulpfiction', 'miraculousworldparistalesofshadybugandclawnoir', 'biggestheistever', 'thelordoftheringsthefellowshipofthering', 'se7en', 'savingbikinibottomthesandycheeksmovie', 'thehobbitthebattleofthefivearmies', 'amityvillewheretheecholives', 'fmarrykill', 'harrypotterandthedeathlyhallowspart1', 'theconvert', 'theequalizer', 'winniethepoohbloodandhoney2', 'twilightofthewarriorswalledin', 'wrathofman', 'here', 'porno', 'encanto', 'purposeoftutoring', 'lastnightatterracelanes', 'younghearts', 'descendantstheriseofred', 'alien', 'belowhermouth', 'thekillersgame', 'thehangover', 'krampus', 'longlegs', 'kalikot', 'hellboythecrookedman', 'timecut', 'diabolikwhoareyou', 'thecantervilleghost', 'howtotrainyourdragon2', '10lives', 'thelionking', 'megalopolis', 'smile', 'themazerunner', 'godzillaminusone', 'missionimpossibledeadreckoningpartone', 'thegigolo', 'fury', 'harrypotterandthehalfbloodprince', 'thelionking', 'djangounchained', 'insideout', 'avatarthewayofwater', 'thenext365days', 'harrypotterandtheorderofthephoenix', 'shangchiandthelegendofthetenrings', 'campcrasher', 'strangedarling', 'joker', 'cheeky', 'inception', 'thelordoftheringsthereturnoftheking', 'madameweb', 'frozen', 'killemall2', 'monstersinc', 'gunner', 'moana', 'theideaofyou', 'pacificrim', 'thepolarexpress', 'howtotrainyourdragonthehiddenworld', 'madagascar', 'thebatman', 'moana', 'salome', 'rebelridge', 'letgo', 'wantedman', 'thenightmarebeforechristmas', 'doubleblind', 'fightclub', 'smugglers', 'bangkokbreakingheavenandhell', 'luck', 'spiderman', 'piratesofthecaribbeanthecurseoftheblackpearl', 'avatar', 'bighero6', 'theequalizer3', 'fiftyshadesfreed', 'bosomymom', 'brooklyn45', 'terrifier', 'howtotrainyourdragon', 'redeeminglove', 'benhur', 'despicableme', 'umamusumeprettyderbybeginningofanewera', 'thenurseonamilitarytour', 'meg2thetrench', 'emmanuelle', 'ultramanrising', 'lookback', 'toystory', 'oddity', 'challengers', 'thetomorrowwar', 'meetmenextchristmas', 'theflash', 'expend4bles', 'wolfs', 'taken2', 'bladerunner2049', 'thecreator', 'elemental', 'avengersendgame', 'theavengers', 'houndsofwar', 'carryon', 'bagoflies', 'deadpool', 'yourname', 'christmasonwindmillway', 'mononokethemoviethephantomintherain', 'uprising', 'aquamanandthelostkingdom', 'thechildrenstrain', 'dakaichiimbeingharassedbythesexiestmanoftheyearthemovieinspain', 'thesmileofthefox', 'thechristmaschroniclesparttwo', 'catchmeifyoucan', 'theinseparables', 'zacksnydersjusticeleague', 'anyonebutyou', 'zuzubalndiaofilme', 'tangled', 'transformersageofextinction', 'haroldandthepurplecrayon', 'mayhem', 'privateschool', 'underparis', 'theloft', 'outside', 'thelordoftheringsthetwotowers', 'scream', 'piratesofthecaribbeandeadmanschest', 'abigail', 'nationallampoonschristmasvacation', 'playingwithlove', 'bigcitygreensthemoviespacecation', 'thematrix', 'lift', 'aminecraftmovie', 'bustygirlfriend', 'trouble', 'thewolfofwallstreet', 'coraline', 'aliens', 'creediii', 'corpsebride', 'findingnemo', 'spidermanhomecoming', 'kill', 'rita', 'parasite', 'anna', 'wish', 'thechristmaschronicles', 'jonipatadeconejo', 'hacksawridge', 'diehard', 'reuniongoalsthebeginning', 'johnwickchapter3parabellum', 'twasthetextbeforechristmas', 'meangirls', 'blitz', 'americansniper', 'drawingcloser', 'thevoyeur', 'suspicion', 'thetunneltosummertheexitofgoodbyes', 'defyinggravitythecurtainrisesonwicked', 'johnwickchapter2', 'ratatouille', 'piratesofthecaribbeanonstrangertides', 'spiderman3', 'queenofhearts', 'creedii', 'achristmascarol', 'theunion', 'after', '10daysofacuriousman', 'readyplayerone', 'taken', 'trap', 'starwars', 'guardiansofthegalaxyvol3', 'aftereverything', 'dungeonsdragonshonoramongthieves', 'virgo', 'themarvels', 'jaws', 'chappie', 'nowayup', 'latenightwiththedevil', 'transformersthelastknight', 'thelittlemermaid', 'granturismo', 'throughmywindow', 'leggingsmania', 'flymetothemoon', 'theemptyman', 'blinktwice', 'hiddenface', '1992', 'anidealfather', 'meangirls', 'womanofthehour', 'andmrs', 'thegodfatherpartii', 'alienoid', 'blackpantherwakandaforever', 'poorthings', 'thefallguy', 'infinite', 'theequalizer2', 'spirited', 'privatecall', 'zootopia', 'killingromance', 'bloodfordust', 'justiceleaguecrisisoninfiniteearthspartthree', 'monkeyman']
+2024-12-15 13:52:05,486 INFO: Reddit stream listener is initialized
+2024-12-15 13:52:05,486 INFO: Starting the Reddit stream
+2024-12-15 13:52:06,810 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:52:06,840 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,840 ERROR: Post 1hea6bu could not be inserted into the table
+2024-12-15 13:52:06,856 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,856 ERROR: Post 1hecgwk could not be inserted into the table
+2024-12-15 13:52:06,858 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,858 ERROR: Post 1hecihb could not be inserted into the table
+2024-12-15 13:52:06,858 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,859 ERROR: Post 1hecp55 could not be inserted into the table
+2024-12-15 13:52:06,883 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,883 ERROR: Post 1hei3tt could not be inserted into the table
+2024-12-15 13:52:06,892 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,893 ERROR: Post 1heijcx could not be inserted into the table
+2024-12-15 13:52:06,893 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,893 ERROR: Post 1heivyp could not be inserted into the table
+2024-12-15 13:52:06,902 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,902 ERROR: Post 1helwj3 could not be inserted into the table
+2024-12-15 13:52:06,907 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,907 ERROR: Post 1hen4vi could not be inserted into the table
+2024-12-15 13:52:06,907 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,907 ERROR: Post 1henaek could not be inserted into the table
+2024-12-15 13:52:06,916 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,916 ERROR: Post 1heo9de could not be inserted into the table
+2024-12-15 13:52:06,919 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,919 ERROR: Post 1heom82 could not be inserted into the table
+2024-12-15 13:52:06,930 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,930 ERROR: Post 1heq335 could not be inserted into the table
+2024-12-15 13:52:06,932 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,932 ERROR: Post 1hequ81 could not be inserted into the table
+2024-12-15 13:52:06,935 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,935 ERROR: Post 1herpgk could not be inserted into the table
+2024-12-15 13:52:06,936 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,936 ERROR: Post 1herzsr could not be inserted into the table
+2024-12-15 13:52:06,948 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,948 ERROR: Post 1hetrq0 could not be inserted into the table
+2024-12-15 13:52:06,949 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,949 ERROR: Post 1hettl9 could not be inserted into the table
+2024-12-15 13:52:06,971 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,972 ERROR: Post 1hewzda could not be inserted into the table
+2024-12-15 13:52:06,975 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,975 ERROR: Post 1hexn08 could not be inserted into the table
+2024-12-15 13:52:06,976 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,976 ERROR: Post 1hexuur could not be inserted into the table
+2024-12-15 13:52:06,981 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,981 ERROR: Post 1heyb2s could not be inserted into the table
+2024-12-15 13:52:06,982 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:52:06,982 ERROR: Post 1heye7x could not be inserted into the table
+2024-12-15 13:52:06,984 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:52:06,985 INFO: The Reddit stream disconnected
+2024-12-15 13:55:34,937 INFO: ---------------- Logger started ----------------
+2024-12-15 13:55:34,937 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/databases/stream.db
+2024-12-15 13:55:34,938 INFO: Connected to the database successfully
+2024-12-15 13:55:34,940 INFO: Table reddit_posts has 137 rows
+2024-12-15 13:55:34,949 INFO: 397 phrases are defined for tracking tweets
+2024-12-15 13:55:34,949 INFO: Track phrases for tweets:
+2024-12-15 13:55:34,949 INFO: ['venomthelastdance', 'moana2', 'elevation', 'absolution', 'armor', 'watchmenchapterii', 'sidelinedtheqbandme', 'miraculousworldlondonattheedgeoftime', 'gladiatorii', 'thewildrobot', 'wicked', 'redone', 'kraventhehunter', 'thesubstance', 'smile2', 'terrifier3', 'alienromulus', 'apocalypsezthebeginningoftheend', 'deadpoolwolverine', 'sikandarkamuqaddar', 'sololevelingreawakening', 'thatchristmas', 'levels', 'insideout2', 'transformersone', 'gtmax', 'despicableme4', 'pimpinerobloodandoil', 'arenawars', 'huntingwithtigers', 'mufasathelionking', 'classified', 'spellbound', 'myfault', 'dearsanta', 'juror2', 'arcadian', 'survive', 'wakeup', 'weekendintaipei', 'moana', 'azrael', 'weliveintime', 'venom', 'pdemeloquequieras', 'venomlettherebecarnage', 'subservience', 'thecountofmontecristo', 'dominique', 'japanesemom', 'remnant', 'overlordthesacredkingdom', 'badboysrideordie', 'howthegrinchstolechristmas', 'thecrow', 'cashout', 'sonicthehedgehog3', 'flow', 'thegrinch', 'thesouleater', 'homealone2lostinnewyork', 'togefilmmeimei', 'thelordoftheringsthewaroftherohirrim', 'skinlikesun', 'themoor', 'culpatuya', 'knoxgoesaway', 'whisperofthewitch', 'pushpa2therule', 'avengersinfinitywar', 'shrek', 'thehauntingoftheimmaculatenurse', 'heretic', 'bagman', 'theplatform2', 'mygrandfathersdemons', 'kingdomoftheplanetoftheapes', 'jokerfoliedeux', 'analmostchristmasstory', 'beetlejuicebeetlejuice', 'kungfupanda4', 'furiosaamadmaxsaga', 'singthriller', 'spidermanacrossthespiderverse', 'interstellar', 'harrypotterandthephilosophersstone', 'ourlittlesecret', 'thegarfieldmovie', 'battleforthewesternfront', 'shrek2', 'freedom', 'duneparttwo', 'canaryblack', 'fastx', 'itendswithus', 'lastas', 'gladiator', 'pleasure', 'transformersriseofthebeasts', 'borderlands', 'transmorphersmechbeasts', 'terrifier2', 'emiliaprez', 'nutcrackers', 'dontmove', '365daysthisday', 'conclave', 'spidermannowayhome', 'twisters', 'theflesh', 'myheroacademiayourenext', 'godzillaxkongthenewempire', 'mary', 'migration', 'donotenter', 'spongebobsquarepantskreepawaykamp', 'jackintimeforchristmas', 'projectsilence', 'barbie', 'fiftyshadesofgrey', 'coco', 'theshadowstrays', 'christmasiscancelled', 'thegodfather', 'wonka', 'takecover', 'anonsensechristmaswithsabrinacarpenter', 'johnwickchapter4', 'bluelockthemovieepisodenagi', 'thebadguyshauntedheist', 'leclitoris', 'pussinbootsthelastwish', 'monstersummer', 'thechroniclesofnarniathelionthewitchandthewardrobe', 'paprika', 'thesnowsister', 'harrypotterandthechamberofsecrets', 'elyas', 'hijack1971', 'brothers', 'prey', 'casinoroyale', 'femaleteacherinfrontofthestudents', 'operationblackops', 'apartment7a', 'sonicthehedgehog2', 'neverletgo', 'myoldass', 'thesilenthour', 'aquietplacedayone', '1978', 'harrypotterandtheprisonerofazkaban', 'anora', 'titanic', 'speaknoevil', 'harrypotterandthedeathlyhallowspart2', 'roadhouse', 'oppenheimer', 'thesupermariobrosmovie', 'topgunmaverick', 'dune', 'harrypotterandthegobletoffire', 'theshawshankredemption', 'civilwar', 'dragonkeeper', 'thebeekeeper', 'theministryofungentlemanlywarfare', 'thedarkknight', 'pulpfiction', 'miraculousworldparistalesofshadybugandclawnoir', 'biggestheistever', 'thelordoftheringsthefellowshipofthering', 'se7en', 'savingbikinibottomthesandycheeksmovie', 'thehobbitthebattleofthefivearmies', 'amityvillewheretheecholives', 'fmarrykill', 'harrypotterandthedeathlyhallowspart1', 'theconvert', 'theequalizer', 'winniethepoohbloodandhoney2', 'twilightofthewarriorswalledin', 'wrathofman', 'here', 'porno', 'encanto', 'purposeoftutoring', 'lastnightatterracelanes', 'younghearts', 'descendantstheriseofred', 'alien', 'belowhermouth', 'thekillersgame', 'thehangover', 'krampus', 'longlegs', 'kalikot', 'hellboythecrookedman', 'timecut', 'diabolikwhoareyou', 'thecantervilleghost', 'howtotrainyourdragon2', '10lives', 'thelionking', 'megalopolis', 'smile', 'themazerunner', 'godzillaminusone', 'missionimpossibledeadreckoningpartone', 'thegigolo', 'fury', 'harrypotterandthehalfbloodprince', 'thelionking', 'djangounchained', 'insideout', 'avatarthewayofwater', 'thenext365days', 'harrypotterandtheorderofthephoenix', 'shangchiandthelegendofthetenrings', 'campcrasher', 'strangedarling', 'joker', 'cheeky', 'inception', 'thelordoftheringsthereturnoftheking', 'madameweb', 'frozen', 'killemall2', 'monstersinc', 'gunner', 'moana', 'theideaofyou', 'pacificrim', 'thepolarexpress', 'howtotrainyourdragonthehiddenworld', 'madagascar', 'thebatman', 'moana', 'salome', 'rebelridge', 'letgo', 'wantedman', 'thenightmarebeforechristmas', 'doubleblind', 'fightclub', 'smugglers', 'bangkokbreakingheavenandhell', 'luck', 'spiderman', 'piratesofthecaribbeanthecurseoftheblackpearl', 'avatar', 'bighero6', 'theequalizer3', 'fiftyshadesfreed', 'bosomymom', 'brooklyn45', 'terrifier', 'howtotrainyourdragon', 'redeeminglove', 'benhur', 'despicableme', 'umamusumeprettyderbybeginningofanewera', 'thenurseonamilitarytour', 'meg2thetrench', 'emmanuelle', 'ultramanrising', 'lookback', 'toystory', 'oddity', 'challengers', 'thetomorrowwar', 'meetmenextchristmas', 'theflash', 'expend4bles', 'wolfs', 'taken2', 'bladerunner2049', 'thecreator', 'elemental', 'avengersendgame', 'theavengers', 'houndsofwar', 'carryon', 'bagoflies', 'deadpool', 'yourname', 'christmasonwindmillway', 'mononokethemoviethephantomintherain', 'uprising', 'aquamanandthelostkingdom', 'thechildrenstrain', 'dakaichiimbeingharassedbythesexiestmanoftheyearthemovieinspain', 'thesmileofthefox', 'thechristmaschroniclesparttwo', 'catchmeifyoucan', 'theinseparables', 'zacksnydersjusticeleague', 'anyonebutyou', 'zuzubalndiaofilme', 'tangled', 'transformersageofextinction', 'haroldandthepurplecrayon', 'mayhem', 'privateschool', 'underparis', 'theloft', 'outside', 'thelordoftheringsthetwotowers', 'scream', 'piratesofthecaribbeandeadmanschest', 'abigail', 'nationallampoonschristmasvacation', 'playingwithlove', 'bigcitygreensthemoviespacecation', 'thematrix', 'lift', 'aminecraftmovie', 'bustygirlfriend', 'trouble', 'thewolfofwallstreet', 'coraline', 'aliens', 'creediii', 'corpsebride', 'findingnemo', 'spidermanhomecoming', 'kill', 'rita', 'parasite', 'anna', 'wish', 'thechristmaschronicles', 'jonipatadeconejo', 'hacksawridge', 'diehard', 'reuniongoalsthebeginning', 'johnwickchapter3parabellum', 'twasthetextbeforechristmas', 'meangirls', 'blitz', 'americansniper', 'drawingcloser', 'thevoyeur', 'suspicion', 'thetunneltosummertheexitofgoodbyes', 'defyinggravitythecurtainrisesonwicked', 'johnwickchapter2', 'ratatouille', 'piratesofthecaribbeanonstrangertides', 'spiderman3', 'queenofhearts', 'creedii', 'achristmascarol', 'theunion', 'after', '10daysofacuriousman', 'readyplayerone', 'taken', 'trap', 'starwars', 'guardiansofthegalaxyvol3', 'aftereverything', 'dungeonsdragonshonoramongthieves', 'virgo', 'themarvels', 'jaws', 'chappie', 'nowayup', 'latenightwiththedevil', 'transformersthelastknight', 'thelittlemermaid', 'granturismo', 'throughmywindow', 'leggingsmania', 'flymetothemoon', 'theemptyman', 'blinktwice', 'hiddenface', '1992', 'anidealfather', 'meangirls', 'womanofthehour', 'andmrs', 'thegodfatherpartii', 'alienoid', 'blackpantherwakandaforever', 'poorthings', 'thefallguy', 'infinite', 'theequalizer2', 'spirited', 'privatecall', 'zootopia', 'killingromance', 'bloodfordust', 'justiceleaguecrisisoninfiniteearthspartthree', 'monkeyman']
+2024-12-15 13:55:34,949 INFO: Reddit stream listener is initialized
+2024-12-15 13:55:34,949 INFO: Starting the Reddit stream
+2024-12-15 13:55:36,100 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:56:48,673 INFO: ---------------- Logger started ----------------
+2024-12-15 13:56:48,673 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/databases/stream.db
+2024-12-15 13:56:48,673 INFO: Connected to the database successfully
+2024-12-15 13:56:48,673 INFO: Table reddit_posts has 137 rows
+2024-12-15 13:56:48,678 INFO: 397 phrases are defined for tracking tweets
+2024-12-15 13:56:48,678 INFO: Track phrases for tweets:
+2024-12-15 13:56:48,678 INFO: ['venomthelastdance', 'moana2', 'elevation', 'absolution', 'armor', 'watchmenchapterii', 'sidelinedtheqbandme', 'miraculousworldlondonattheedgeoftime', 'gladiatorii', 'thewildrobot', 'wicked', 'redone', 'kraventhehunter', 'thesubstance', 'smile2', 'terrifier3', 'alienromulus', 'apocalypsezthebeginningoftheend', 'deadpoolwolverine', 'sikandarkamuqaddar', 'sololevelingreawakening', 'thatchristmas', 'levels', 'insideout2', 'transformersone', 'gtmax', 'despicableme4', 'pimpinerobloodandoil', 'arenawars', 'huntingwithtigers', 'mufasathelionking', 'classified', 'spellbound', 'myfault', 'dearsanta', 'juror2', 'arcadian', 'survive', 'wakeup', 'weekendintaipei', 'moana', 'azrael', 'weliveintime', 'venom', 'pdemeloquequieras', 'venomlettherebecarnage', 'subservience', 'thecountofmontecristo', 'dominique', 'japanesemom', 'remnant', 'overlordthesacredkingdom', 'badboysrideordie', 'howthegrinchstolechristmas', 'thecrow', 'cashout', 'sonicthehedgehog3', 'flow', 'thegrinch', 'thesouleater', 'homealone2lostinnewyork', 'togefilmmeimei', 'thelordoftheringsthewaroftherohirrim', 'skinlikesun', 'themoor', 'culpatuya', 'knoxgoesaway', 'whisperofthewitch', 'pushpa2therule', 'avengersinfinitywar', 'shrek', 'thehauntingoftheimmaculatenurse', 'heretic', 'bagman', 'theplatform2', 'mygrandfathersdemons', 'kingdomoftheplanetoftheapes', 'jokerfoliedeux', 'analmostchristmasstory', 'beetlejuicebeetlejuice', 'kungfupanda4', 'furiosaamadmaxsaga', 'singthriller', 'spidermanacrossthespiderverse', 'interstellar', 'harrypotterandthephilosophersstone', 'ourlittlesecret', 'thegarfieldmovie', 'battleforthewesternfront', 'shrek2', 'freedom', 'duneparttwo', 'canaryblack', 'fastx', 'itendswithus', 'lastas', 'gladiator', 'pleasure', 'transformersriseofthebeasts', 'borderlands', 'transmorphersmechbeasts', 'terrifier2', 'emiliaprez', 'nutcrackers', 'dontmove', '365daysthisday', 'conclave', 'spidermannowayhome', 'twisters', 'theflesh', 'myheroacademiayourenext', 'godzillaxkongthenewempire', 'mary', 'migration', 'donotenter', 'spongebobsquarepantskreepawaykamp', 'jackintimeforchristmas', 'projectsilence', 'barbie', 'fiftyshadesofgrey', 'coco', 'theshadowstrays', 'christmasiscancelled', 'thegodfather', 'wonka', 'takecover', 'anonsensechristmaswithsabrinacarpenter', 'johnwickchapter4', 'bluelockthemovieepisodenagi', 'thebadguyshauntedheist', 'leclitoris', 'pussinbootsthelastwish', 'monstersummer', 'thechroniclesofnarniathelionthewitchandthewardrobe', 'paprika', 'thesnowsister', 'harrypotterandthechamberofsecrets', 'elyas', 'hijack1971', 'brothers', 'prey', 'casinoroyale', 'femaleteacherinfrontofthestudents', 'operationblackops', 'apartment7a', 'sonicthehedgehog2', 'neverletgo', 'myoldass', 'thesilenthour', 'aquietplacedayone', '1978', 'harrypotterandtheprisonerofazkaban', 'anora', 'titanic', 'speaknoevil', 'harrypotterandthedeathlyhallowspart2', 'roadhouse', 'oppenheimer', 'thesupermariobrosmovie', 'topgunmaverick', 'dune', 'harrypotterandthegobletoffire', 'theshawshankredemption', 'civilwar', 'dragonkeeper', 'thebeekeeper', 'theministryofungentlemanlywarfare', 'thedarkknight', 'pulpfiction', 'miraculousworldparistalesofshadybugandclawnoir', 'biggestheistever', 'thelordoftheringsthefellowshipofthering', 'se7en', 'savingbikinibottomthesandycheeksmovie', 'thehobbitthebattleofthefivearmies', 'amityvillewheretheecholives', 'fmarrykill', 'harrypotterandthedeathlyhallowspart1', 'theconvert', 'theequalizer', 'winniethepoohbloodandhoney2', 'twilightofthewarriorswalledin', 'wrathofman', 'here', 'porno', 'encanto', 'purposeoftutoring', 'lastnightatterracelanes', 'younghearts', 'descendantstheriseofred', 'alien', 'belowhermouth', 'thekillersgame', 'thehangover', 'krampus', 'longlegs', 'kalikot', 'hellboythecrookedman', 'timecut', 'diabolikwhoareyou', 'thecantervilleghost', 'howtotrainyourdragon2', '10lives', 'thelionking', 'megalopolis', 'smile', 'themazerunner', 'godzillaminusone', 'missionimpossibledeadreckoningpartone', 'thegigolo', 'fury', 'harrypotterandthehalfbloodprince', 'thelionking', 'djangounchained', 'insideout', 'avatarthewayofwater', 'thenext365days', 'harrypotterandtheorderofthephoenix', 'shangchiandthelegendofthetenrings', 'campcrasher', 'strangedarling', 'joker', 'cheeky', 'inception', 'thelordoftheringsthereturnoftheking', 'madameweb', 'frozen', 'killemall2', 'monstersinc', 'gunner', 'moana', 'theideaofyou', 'pacificrim', 'thepolarexpress', 'howtotrainyourdragonthehiddenworld', 'madagascar', 'thebatman', 'moana', 'salome', 'rebelridge', 'letgo', 'wantedman', 'thenightmarebeforechristmas', 'doubleblind', 'fightclub', 'smugglers', 'bangkokbreakingheavenandhell', 'luck', 'spiderman', 'piratesofthecaribbeanthecurseoftheblackpearl', 'avatar', 'bighero6', 'theequalizer3', 'fiftyshadesfreed', 'bosomymom', 'brooklyn45', 'terrifier', 'howtotrainyourdragon', 'redeeminglove', 'benhur', 'despicableme', 'umamusumeprettyderbybeginningofanewera', 'thenurseonamilitarytour', 'meg2thetrench', 'emmanuelle', 'ultramanrising', 'lookback', 'toystory', 'oddity', 'challengers', 'thetomorrowwar', 'meetmenextchristmas', 'theflash', 'expend4bles', 'wolfs', 'taken2', 'bladerunner2049', 'thecreator', 'elemental', 'avengersendgame', 'theavengers', 'houndsofwar', 'carryon', 'bagoflies', 'deadpool', 'yourname', 'christmasonwindmillway', 'mononokethemoviethephantomintherain', 'uprising', 'aquamanandthelostkingdom', 'thechildrenstrain', 'dakaichiimbeingharassedbythesexiestmanoftheyearthemovieinspain', 'thesmileofthefox', 'thechristmaschroniclesparttwo', 'catchmeifyoucan', 'theinseparables', 'zacksnydersjusticeleague', 'anyonebutyou', 'zuzubalndiaofilme', 'tangled', 'transformersageofextinction', 'haroldandthepurplecrayon', 'mayhem', 'privateschool', 'underparis', 'theloft', 'outside', 'thelordoftheringsthetwotowers', 'scream', 'piratesofthecaribbeandeadmanschest', 'abigail', 'nationallampoonschristmasvacation', 'playingwithlove', 'bigcitygreensthemoviespacecation', 'thematrix', 'lift', 'aminecraftmovie', 'bustygirlfriend', 'trouble', 'thewolfofwallstreet', 'coraline', 'aliens', 'creediii', 'corpsebride', 'findingnemo', 'spidermanhomecoming', 'kill', 'rita', 'parasite', 'anna', 'wish', 'thechristmaschronicles', 'jonipatadeconejo', 'hacksawridge', 'diehard', 'reuniongoalsthebeginning', 'johnwickchapter3parabellum', 'twasthetextbeforechristmas', 'meangirls', 'blitz', 'americansniper', 'drawingcloser', 'thevoyeur', 'suspicion', 'thetunneltosummertheexitofgoodbyes', 'defyinggravitythecurtainrisesonwicked', 'johnwickchapter2', 'ratatouille', 'piratesofthecaribbeanonstrangertides', 'spiderman3', 'queenofhearts', 'creedii', 'achristmascarol', 'theunion', 'after', '10daysofacuriousman', 'readyplayerone', 'taken', 'trap', 'starwars', 'guardiansofthegalaxyvol3', 'aftereverything', 'dungeonsdragonshonoramongthieves', 'virgo', 'themarvels', 'jaws', 'chappie', 'nowayup', 'latenightwiththedevil', 'transformersthelastknight', 'thelittlemermaid', 'granturismo', 'throughmywindow', 'leggingsmania', 'flymetothemoon', 'theemptyman', 'blinktwice', 'hiddenface', '1992', 'anidealfather', 'meangirls', 'womanofthehour', 'andmrs', 'thegodfatherpartii', 'alienoid', 'blackpantherwakandaforever', 'poorthings', 'thefallguy', 'infinite', 'theequalizer2', 'spirited', 'privatecall', 'zootopia', 'killingromance', 'bloodfordust', 'justiceleaguecrisisoninfiniteearthspartthree', 'monkeyman']
+2024-12-15 13:56:48,678 INFO: Reddit stream listener is initialized
+2024-12-15 13:56:48,678 INFO: Starting the Reddit stream
+2024-12-15 13:56:49,863 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:56:49,894 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,894 ERROR: Post 1hea6bu could not be inserted into the table
+2024-12-15 13:56:49,913 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,913 ERROR: Post 1hecgwk could not be inserted into the table
+2024-12-15 13:56:49,914 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,914 ERROR: Post 1hecihb could not be inserted into the table
+2024-12-15 13:56:49,915 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,915 ERROR: Post 1hecp55 could not be inserted into the table
+2024-12-15 13:56:49,948 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,948 ERROR: Post 1hei3tt could not be inserted into the table
+2024-12-15 13:56:49,958 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,958 ERROR: Post 1heijcx could not be inserted into the table
+2024-12-15 13:56:49,958 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,958 ERROR: Post 1heivyp could not be inserted into the table
+2024-12-15 13:56:49,971 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,971 ERROR: Post 1helwj3 could not be inserted into the table
+2024-12-15 13:56:49,975 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,975 ERROR: Post 1hen4vi could not be inserted into the table
+2024-12-15 13:56:49,976 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,976 ERROR: Post 1henaek could not be inserted into the table
+2024-12-15 13:56:49,991 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,991 ERROR: Post 1heo9de could not be inserted into the table
+2024-12-15 13:56:49,996 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:49,996 ERROR: Post 1heom82 could not be inserted into the table
+2024-12-15 13:56:50,015 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,015 ERROR: Post 1heq335 could not be inserted into the table
+2024-12-15 13:56:50,018 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,018 ERROR: Post 1hequ81 could not be inserted into the table
+2024-12-15 13:56:50,021 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,021 ERROR: Post 1herpgk could not be inserted into the table
+2024-12-15 13:56:50,023 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,023 ERROR: Post 1herzsr could not be inserted into the table
+2024-12-15 13:56:50,036 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,036 ERROR: Post 1hetrq0 could not be inserted into the table
+2024-12-15 13:56:50,037 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,037 ERROR: Post 1hettl9 could not be inserted into the table
+2024-12-15 13:56:50,063 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,063 ERROR: Post 1hewzda could not be inserted into the table
+2024-12-15 13:56:50,067 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,067 ERROR: Post 1hexn08 could not be inserted into the table
+2024-12-15 13:56:50,069 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,069 ERROR: Post 1hexuur could not be inserted into the table
+2024-12-15 13:56:50,074 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,074 ERROR: Post 1heyb2s could not be inserted into the table
+2024-12-15 13:56:50,075 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:56:50,075 ERROR: Post 1heye7x could not be inserted into the table
+2024-12-15 13:56:50,078 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:56:50,078 INFO: The Reddit stream disconnected
+2024-12-15 13:58:20,167 INFO: Reddit stream listener is initialized
+2024-12-15 13:58:20,167 INFO: Starting the Reddit stream
+2024-12-15 13:58:21,203 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:58:21,245 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,245 ERROR: Post 1hbpzx2 could not be inserted into the table
+2024-12-15 13:58:21,247 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,247 ERROR: Post 1hbykcv could not be inserted into the table
+2024-12-15 13:58:21,265 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,265 ERROR: Post 1hcpnw6 could not be inserted into the table
+2024-12-15 13:58:21,268 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,268 ERROR: Post 1hcukqb could not be inserted into the table
+2024-12-15 13:58:21,269 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,269 ERROR: Post 1hcupug could not be inserted into the table
+2024-12-15 13:58:21,271 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,271 ERROR: Post 1hcya1y could not be inserted into the table
+2024-12-15 13:58:21,291 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,291 ERROR: Post 1hdk52m could not be inserted into the table
+2024-12-15 13:58:21,297 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,298 ERROR: Post 1hdpaha could not be inserted into the table
+2024-12-15 13:58:21,309 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,309 ERROR: Post 1hdxcj7 could not be inserted into the table
+2024-12-15 13:58:21,313 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,313 ERROR: Post 1hdywba could not be inserted into the table
+2024-12-15 13:58:21,331 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,331 ERROR: Post 1hed71w could not be inserted into the table
+2024-12-15 13:58:21,337 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,337 ERROR: Post 1heetcx could not be inserted into the table
+2024-12-15 13:58:21,337 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,337 ERROR: Post 1heewrz could not be inserted into the table
+2024-12-15 13:58:21,342 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,342 ERROR: Post 1heihei could not be inserted into the table
+2024-12-15 13:58:21,347 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,347 ERROR: Post 1hel5bu could not be inserted into the table
+2024-12-15 13:58:21,359 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,359 ERROR: Post 1hes5md could not be inserted into the table
+2024-12-15 13:58:21,369 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:58:21,369 ERROR: Post 1heyja8 could not be inserted into the table
+2024-12-15 13:58:21,370 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:58:21,370 INFO: The Reddit stream disconnected
+2024-12-15 13:59:51,454 INFO: Reddit stream listener is initialized
+2024-12-15 13:59:51,454 INFO: Starting the Reddit stream
+2024-12-15 13:59:53,439 INFO: Number of posts streamed since the start: 0
+2024-12-15 13:59:53,445 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,445 ERROR: Post 1h1st54 could not be inserted into the table
+2024-12-15 13:59:53,451 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,451 ERROR: Post 1h1v2au could not be inserted into the table
+2024-12-15 13:59:53,462 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,462 ERROR: Post 1h26zxe could not be inserted into the table
+2024-12-15 13:59:53,486 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,486 ERROR: Post 1h4gjof could not be inserted into the table
+2024-12-15 13:59:53,488 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,488 ERROR: Post 1h4nffo could not be inserted into the table
+2024-12-15 13:59:53,495 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,495 ERROR: Post 1h5cr0t could not be inserted into the table
+2024-12-15 13:59:53,500 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,500 ERROR: Post 1h693t6 could not be inserted into the table
+2024-12-15 13:59:53,502 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,502 ERROR: Post 1h6di2w could not be inserted into the table
+2024-12-15 13:59:53,517 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,517 ERROR: Post 1h7na3n could not be inserted into the table
+2024-12-15 13:59:53,522 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,522 ERROR: Post 1h84ocb could not be inserted into the table
+2024-12-15 13:59:53,535 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,536 ERROR: Post 1h8fmem could not be inserted into the table
+2024-12-15 13:59:53,538 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,538 ERROR: Post 1h8xrwd could not be inserted into the table
+2024-12-15 13:59:53,545 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,545 ERROR: Post 1h9kl29 could not be inserted into the table
+2024-12-15 13:59:53,548 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,548 ERROR: Post 1h9mt3l could not be inserted into the table
+2024-12-15 13:59:53,554 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,554 ERROR: Post 1ha00bl could not be inserted into the table
+2024-12-15 13:59:53,559 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,559 ERROR: Post 1ha44qq could not be inserted into the table
+2024-12-15 13:59:53,572 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,572 ERROR: Post 1hbztnn could not be inserted into the table
+2024-12-15 13:59:53,578 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,578 ERROR: Post 1hcphno could not be inserted into the table
+2024-12-15 13:59:53,588 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,588 ERROR: Post 1hdpm62 could not be inserted into the table
+2024-12-15 13:59:53,593 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,593 ERROR: Post 1heavwx could not be inserted into the table
+2024-12-15 13:59:53,595 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,595 ERROR: Post 1henup7 could not be inserted into the table
+2024-12-15 13:59:53,599 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 13:59:53,599 ERROR: Post 1heq3za could not be inserted into the table
+2024-12-15 13:59:53,603 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 13:59:53,604 INFO: The Reddit stream disconnected
+2024-12-15 14:01:23,609 INFO: Reddit stream listener is initialized
+2024-12-15 14:01:23,609 INFO: Starting the Reddit stream
+2024-12-15 14:01:24,860 INFO: Number of posts streamed since the start: 0
+2024-12-15 14:01:24,863 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,863 ERROR: Post 1hbw5xv could not be inserted into the table
+2024-12-15 14:01:24,871 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,872 ERROR: Post 1hc1jw3 could not be inserted into the table
+2024-12-15 14:01:24,882 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,882 ERROR: Post 1hc46m5 could not be inserted into the table
+2024-12-15 14:01:24,913 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,913 ERROR: Post 1hczmbl could not be inserted into the table
+2024-12-15 14:01:24,922 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,922 ERROR: Post 1hd5k8b could not be inserted into the table
+2024-12-15 14:01:24,923 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,923 ERROR: Post 1hd60tv could not be inserted into the table
+2024-12-15 14:01:24,939 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,939 ERROR: Post 1hdj6n1 could not be inserted into the table
+2024-12-15 14:01:24,985 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:01:24,985 ERROR: Post 1hebwz1 could not be inserted into the table
+2024-12-15 14:01:25,015 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 14:01:25,015 INFO: The Reddit stream disconnected
+2024-12-15 14:02:55,064 INFO: Reddit stream listener is initialized
+2024-12-15 14:02:55,064 INFO: Starting the Reddit stream
+2024-12-15 14:02:57,252 INFO: Number of posts streamed since the start: 0
+2024-12-15 14:02:57,269 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:02:57,269 ERROR: Post 1hdwgh4 could not be inserted into the table
+2024-12-15 14:02:57,271 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:02:57,271 ERROR: Post 1hdwh4f could not be inserted into the table
+2024-12-15 14:02:57,280 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:02:57,280 ERROR: Post 1hdx987 could not be inserted into the table
+2024-12-15 14:02:57,313 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:02:57,313 ERROR: Post 1hdinp7 could not be inserted into the table
+2024-12-15 14:02:57,320 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-15 14:02:57,320 ERROR: Post 1he6oyz could not be inserted into the table
+2024-12-15 14:02:58,227 INFO: Reached 100 posts limit, stopping the stream
+2024-12-15 14:02:58,228 INFO: The Reddit stream disconnected
+2024-12-15 14:04:28,284 INFO: Closed the database connection

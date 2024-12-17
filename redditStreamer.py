@@ -13,8 +13,8 @@ from utils import createDir, setupLogger, connectToDB, filterStringbySubstrings
 
 # SQL queries for table creation and data insertion
 CREATE_TABLE_SQL =  '''CREATE TABLE IF NOT EXISTS {} (
-                        id_str text not null,
-                        reddit_datetime text,
+                        id_str varchar(128) not null,
+                        reddit_datetime varchar(256),
                         reddit_raw text,
                         primary key (id_str)
                     )'''.format(tbName)
@@ -44,7 +44,7 @@ class RedditStreamListener:
     def listen(self):
         """ Listens to new posts and saves them to the database."""
         subreddit = self.reddit.subreddit(self.subreddits)
-        for submission in subreddit.stream.submissions():
+        for submission in subreddit.stream.submissions(): 
             if self.count % self.numReport == 0:
                 logging.info(f"Number of posts streamed since the start: {self.count}")
 
@@ -56,6 +56,8 @@ class RedditStreamListener:
                 del subdict["_reddit"]
                 del subdict["subreddit"]
                 del subdict["author"]
+                if "poll_data" in subdict:
+                    del subdict["poll_data"]
                 post_raw = json.dumps(subdict)
 
                 try:
@@ -197,7 +199,7 @@ if __name__ == "__main__":
 
     # Prepare phrases for tracking
     trackPhrases = getTrackPhrases(movies_fpath)
-    subReddits = ["movies","Film", "TrueFilm", "criterion"]
+    subReddits = ["movies","Film", "TrueFilm", "criterion", "Letterboxd"]
 
     # Start streaming tweets
     for sub in subReddits:
