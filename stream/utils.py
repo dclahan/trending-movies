@@ -5,9 +5,6 @@ import boto3
 import re
 from botocore.exceptions import ClientError
 
-# def alphanumOnly(string):
-#     return re.sub(r'[^A-Za-z0-9]', '', string.lower())
-
 def filterStringbySubstrings(string, substrings):
     return any(sub in re.sub(r'[^A-Za-z0-9]', '', string.lower()) for sub in substrings)
 
