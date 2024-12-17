@@ -188,7 +188,7 @@ if __name__ == "__main__":
 
     # Read the API configuration file
     config = configparser.ConfigParser()
-    config.read('api.cfg')
+    config.read('./../api.cfg')
 
     # Create tweepy api
     api = createRedditInstance(
@@ -204,7 +204,7 @@ if __name__ == "__main__":
     # Start streaming tweets
     for sub in subReddits:
         startRedditStream(api, cursor, streamCount, streamPeriod, sub, trackPhrases)
-        time.sleep(90)
+        time.sleep(75)
 
     # Close the database connection
     try:

@@ -1,3 +1,4 @@
 api.cfg
 tweetStreamer.py
 __pycache__
+posts_raw

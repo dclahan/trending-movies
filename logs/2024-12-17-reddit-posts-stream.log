@@ -98,3 +98,206 @@
 2024-12-17 14:30:41,880 INFO: Reached 100 posts limit, stopping the stream
 2024-12-17 14:30:41,881 INFO: The Reddit stream disconnected
 2024-12-17 14:32:11,972 INFO: Closed the database connection
+2024-12-17 15:42:59,996 INFO: ---------------- Logger started ----------------
+2024-12-17 15:42:59,998 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/stream/../databases/stream.db
+2024-12-17 15:42:59,998 INFO: Connected to the database successfully
+2024-12-17 15:42:59,999 INFO: Table reddit_posts has 208 rows
+2024-12-17 15:43:00,046 INFO: 397 phrases are defined for tracking tweets
+2024-12-17 15:43:00,047 INFO: Track phrases for tweets:
+2024-12-17 15:43:00,047 INFO: ['venomthelastdance', 'moana2', 'elevation', 'absolution', 'armor', 'watchmenchapterii', 'sidelinedtheqbandme', 'miraculousworldlondonattheedgeoftime', 'gladiatorii', 'thewildrobot', 'wicked', 'redone', 'kraventhehunter', 'thesubstance', 'smile2', 'terrifier3', 'alienromulus', 'apocalypsezthebeginningoftheend', 'deadpoolwolverine', 'sikandarkamuqaddar', 'sololevelingreawakening', 'thatchristmas', 'levels', 'insideout2', 'transformersone', 'gtmax', 'despicableme4', 'pimpinerobloodandoil', 'arenawars', 'huntingwithtigers', 'mufasathelionking', 'classified', 'spellbound', 'myfault', 'dearsanta', 'juror2', 'arcadian', 'survive', 'wakeup', 'weekendintaipei', 'moana', 'azrael', 'weliveintime', 'venom', 'pdemeloquequieras', 'venomlettherebecarnage', 'subservience', 'thecountofmontecristo', 'dominique', 'japanesemom', 'remnant', 'overlordthesacredkingdom', 'badboysrideordie', 'howthegrinchstolechristmas', 'thecrow', 'cashout', 'sonicthehedgehog3', 'flow', 'thegrinch', 'thesouleater', 'homealone2lostinnewyork', 'togefilmmeimei', 'thelordoftheringsthewaroftherohirrim', 'skinlikesun', 'themoor', 'culpatuya', 'knoxgoesaway', 'whisperofthewitch', 'pushpa2therule', 'avengersinfinitywar', 'shrek', 'thehauntingoftheimmaculatenurse', 'heretic', 'bagman', 'theplatform2', 'mygrandfathersdemons', 'kingdomoftheplanetoftheapes', 'jokerfoliedeux', 'analmostchristmasstory', 'beetlejuicebeetlejuice', 'kungfupanda4', 'furiosaamadmaxsaga', 'singthriller', 'spidermanacrossthespiderverse', 'interstellar', 'harrypotterandthephilosophersstone', 'ourlittlesecret', 'thegarfieldmovie', 'battleforthewesternfront', 'shrek2', 'freedom', 'duneparttwo', 'canaryblack', 'fastx', 'itendswithus', 'lastas', 'gladiator', 'pleasure', 'transformersriseofthebeasts', 'borderlands', 'transmorphersmechbeasts', 'terrifier2', 'emiliaprez', 'nutcrackers', 'dontmove', '365daysthisday', 'conclave', 'spidermannowayhome', 'twisters', 'theflesh', 'myheroacademiayourenext', 'godzillaxkongthenewempire', 'mary', 'migration', 'donotenter', 'spongebobsquarepantskreepawaykamp', 'jackintimeforchristmas', 'projectsilence', 'barbie', 'fiftyshadesofgrey', 'coco', 'theshadowstrays', 'christmasiscancelled', 'thegodfather', 'wonka', 'takecover', 'anonsensechristmaswithsabrinacarpenter', 'johnwickchapter4', 'bluelockthemovieepisodenagi', 'thebadguyshauntedheist', 'leclitoris', 'pussinbootsthelastwish', 'monstersummer', 'thechroniclesofnarniathelionthewitchandthewardrobe', 'paprika', 'thesnowsister', 'harrypotterandthechamberofsecrets', 'elyas', 'hijack1971', 'brothers', 'prey', 'casinoroyale', 'femaleteacherinfrontofthestudents', 'operationblackops', 'apartment7a', 'sonicthehedgehog2', 'neverletgo', 'myoldass', 'thesilenthour', 'aquietplacedayone', '1978', 'harrypotterandtheprisonerofazkaban', 'anora', 'titanic', 'speaknoevil', 'harrypotterandthedeathlyhallowspart2', 'roadhouse', 'oppenheimer', 'thesupermariobrosmovie', 'topgunmaverick', 'dune', 'harrypotterandthegobletoffire', 'theshawshankredemption', 'civilwar', 'dragonkeeper', 'thebeekeeper', 'theministryofungentlemanlywarfare', 'thedarkknight', 'pulpfiction', 'miraculousworldparistalesofshadybugandclawnoir', 'biggestheistever', 'thelordoftheringsthefellowshipofthering', 'se7en', 'savingbikinibottomthesandycheeksmovie', 'thehobbitthebattleofthefivearmies', 'amityvillewheretheecholives', 'fmarrykill', 'harrypotterandthedeathlyhallowspart1', 'theconvert', 'theequalizer', 'winniethepoohbloodandhoney2', 'twilightofthewarriorswalledin', 'wrathofman', 'here', 'porno', 'encanto', 'purposeoftutoring', 'lastnightatterracelanes', 'younghearts', 'descendantstheriseofred', 'alien', 'belowhermouth', 'thekillersgame', 'thehangover', 'krampus', 'longlegs', 'kalikot', 'hellboythecrookedman', 'timecut', 'diabolikwhoareyou', 'thecantervilleghost', 'howtotrainyourdragon2', '10lives', 'thelionking', 'megalopolis', 'smile', 'themazerunner', 'godzillaminusone', 'missionimpossibledeadreckoningpartone', 'thegigolo', 'fury', 'harrypotterandthehalfbloodprince', 'thelionking', 'djangounchained', 'insideout', 'avatarthewayofwater', 'thenext365days', 'harrypotterandtheorderofthephoenix', 'shangchiandthelegendofthetenrings', 'campcrasher', 'strangedarling', 'joker', 'cheeky', 'inception', 'thelordoftheringsthereturnoftheking', 'madameweb', 'frozen', 'killemall2', 'monstersinc', 'gunner', 'moana', 'theideaofyou', 'pacificrim', 'thepolarexpress', 'howtotrainyourdragonthehiddenworld', 'madagascar', 'thebatman', 'moana', 'salome', 'rebelridge', 'letgo', 'wantedman', 'thenightmarebeforechristmas', 'doubleblind', 'fightclub', 'smugglers', 'bangkokbreakingheavenandhell', 'luck', 'spiderman', 'piratesofthecaribbeanthecurseoftheblackpearl', 'avatar', 'bighero6', 'theequalizer3', 'fiftyshadesfreed', 'bosomymom', 'brooklyn45', 'terrifier', 'howtotrainyourdragon', 'redeeminglove', 'benhur', 'despicableme', 'umamusumeprettyderbybeginningofanewera', 'thenurseonamilitarytour', 'meg2thetrench', 'emmanuelle', 'ultramanrising', 'lookback', 'toystory', 'oddity', 'challengers', 'thetomorrowwar', 'meetmenextchristmas', 'theflash', 'expend4bles', 'wolfs', 'taken2', 'bladerunner2049', 'thecreator', 'elemental', 'avengersendgame', 'theavengers', 'houndsofwar', 'carryon', 'bagoflies', 'deadpool', 'yourname', 'christmasonwindmillway', 'mononokethemoviethephantomintherain', 'uprising', 'aquamanandthelostkingdom', 'thechildrenstrain', 'dakaichiimbeingharassedbythesexiestmanoftheyearthemovieinspain', 'thesmileofthefox', 'thechristmaschroniclesparttwo', 'catchmeifyoucan', 'theinseparables', 'zacksnydersjusticeleague', 'anyonebutyou', 'zuzubalndiaofilme', 'tangled', 'transformersageofextinction', 'haroldandthepurplecrayon', 'mayhem', 'privateschool', 'underparis', 'theloft', 'outside', 'thelordoftheringsthetwotowers', 'scream', 'piratesofthecaribbeandeadmanschest', 'abigail', 'nationallampoonschristmasvacation', 'playingwithlove', 'bigcitygreensthemoviespacecation', 'thematrix', 'lift', 'aminecraftmovie', 'bustygirlfriend', 'trouble', 'thewolfofwallstreet', 'coraline', 'aliens', 'creediii', 'corpsebride', 'findingnemo', 'spidermanhomecoming', 'kill', 'rita', 'parasite', 'anna', 'wish', 'thechristmaschronicles', 'jonipatadeconejo', 'hacksawridge', 'diehard', 'reuniongoalsthebeginning', 'johnwickchapter3parabellum', 'twasthetextbeforechristmas', 'meangirls', 'blitz', 'americansniper', 'drawingcloser', 'thevoyeur', 'suspicion', 'thetunneltosummertheexitofgoodbyes', 'defyinggravitythecurtainrisesonwicked', 'johnwickchapter2', 'ratatouille', 'piratesofthecaribbeanonstrangertides', 'spiderman3', 'queenofhearts', 'creedii', 'achristmascarol', 'theunion', 'after', '10daysofacuriousman', 'readyplayerone', 'taken', 'trap', 'starwars', 'guardiansofthegalaxyvol3', 'aftereverything', 'dungeonsdragonshonoramongthieves', 'virgo', 'themarvels', 'jaws', 'chappie', 'nowayup', 'latenightwiththedevil', 'transformersthelastknight', 'thelittlemermaid', 'granturismo', 'throughmywindow', 'leggingsmania', 'flymetothemoon', 'theemptyman', 'blinktwice', 'hiddenface', '1992', 'anidealfather', 'meangirls', 'womanofthehour', 'andmrs', 'thegodfatherpartii', 'alienoid', 'blackpantherwakandaforever', 'poorthings', 'thefallguy', 'infinite', 'theequalizer2', 'spirited', 'privatecall', 'zootopia', 'killingromance', 'bloodfordust', 'justiceleaguecrisisoninfiniteearthspartthree', 'monkeyman']
+2024-12-17 15:43:00,047 INFO: Reddit stream listener is initialized
+2024-12-17 15:43:00,047 INFO: Starting the Reddit stream
+2024-12-17 15:43:01,085 INFO: Number of posts streamed since the start: 0
+2024-12-17 15:43:01,091 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,091 ERROR: Post 1hftsx6 could not be inserted into the table
+2024-12-17 15:43:01,093 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,093 ERROR: Post 1hfu2p4 could not be inserted into the table
+2024-12-17 15:43:01,109 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,110 ERROR: Post 1hfvzzi could not be inserted into the table
+2024-12-17 15:43:01,132 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,133 ERROR: Post 1hfpmlz could not be inserted into the table
+2024-12-17 15:43:01,133 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,133 ERROR: Post 1hfxc9z could not be inserted into the table
+2024-12-17 15:43:01,135 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,135 ERROR: Post 1hfxrkf could not be inserted into the table
+2024-12-17 15:43:01,147 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,147 ERROR: Post 1hfyx7s could not be inserted into the table
+2024-12-17 15:43:01,157 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,157 ERROR: Post 1hg2dro could not be inserted into the table
+2024-12-17 15:43:01,160 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,160 ERROR: Post 1hg2xvw could not be inserted into the table
+2024-12-17 15:43:01,162 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,162 ERROR: Post 1hg35v0 could not be inserted into the table
+2024-12-17 15:43:01,184 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,184 ERROR: Post 1hg821d could not be inserted into the table
+2024-12-17 15:43:01,219 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,219 ERROR: Post 1hgcc1h could not be inserted into the table
+2024-12-17 15:43:01,232 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,232 ERROR: Post 1hgf5ry could not be inserted into the table
+2024-12-17 15:43:01,232 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,232 ERROR: Post 1hgf7ii could not be inserted into the table
+2024-12-17 15:43:01,236 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,236 ERROR: Post 1hgfv7o could not be inserted into the table
+2024-12-17 15:43:01,269 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:43:01,269 ERROR: Post 1hght25 could not be inserted into the table
+2024-12-17 15:43:01,319 INFO: Reached 100 posts limit, stopping the stream
+2024-12-17 15:43:01,320 INFO: The Reddit stream disconnected
+2024-12-17 15:44:31,401 INFO: Reddit stream listener is initialized
+2024-12-17 15:44:31,401 INFO: Starting the Reddit stream
+2024-12-17 15:44:32,288 INFO: Number of posts streamed since the start: 0
+2024-12-17 15:44:32,296 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,296 ERROR: Post 1hdxcj7 could not be inserted into the table
+2024-12-17 15:44:32,303 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,303 ERROR: Post 1hdywba could not be inserted into the table
+2024-12-17 15:44:32,328 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,328 ERROR: Post 1hed71w could not be inserted into the table
+2024-12-17 15:44:32,335 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,335 ERROR: Post 1heetcx could not be inserted into the table
+2024-12-17 15:44:32,335 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,336 ERROR: Post 1heewrz could not be inserted into the table
+2024-12-17 15:44:32,341 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,341 ERROR: Post 1heihei could not be inserted into the table
+2024-12-17 15:44:32,346 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,346 ERROR: Post 1hel5bu could not be inserted into the table
+2024-12-17 15:44:32,358 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,358 ERROR: Post 1hes5md could not be inserted into the table
+2024-12-17 15:44:32,369 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,369 ERROR: Post 1heyja8 could not be inserted into the table
+2024-12-17 15:44:32,374 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,374 ERROR: Post 1hf19yr could not be inserted into the table
+2024-12-17 15:44:32,384 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,384 ERROR: Post 1hf2wat could not be inserted into the table
+2024-12-17 15:44:32,394 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,394 ERROR: Post 1hfbfjx could not be inserted into the table
+2024-12-17 15:44:32,398 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,398 ERROR: Post 1hfgjh1 could not be inserted into the table
+2024-12-17 15:44:32,421 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,421 ERROR: Post 1hfsdm4 could not be inserted into the table
+2024-12-17 15:44:32,423 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,423 ERROR: Post 1hfvxpv could not be inserted into the table
+2024-12-17 15:44:32,427 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,428 ERROR: Post 1hfyh3y could not be inserted into the table
+2024-12-17 15:44:32,454 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,454 ERROR: Post 1hghv9c could not be inserted into the table
+2024-12-17 15:44:32,456 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,456 ERROR: Post 1hghvdq could not be inserted into the table
+2024-12-17 15:44:32,456 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:44:32,456 ERROR: Post 1hgihjc could not be inserted into the table
+2024-12-17 15:44:32,462 INFO: Reached 100 posts limit, stopping the stream
+2024-12-17 15:44:32,463 INFO: The Reddit stream disconnected
+2024-12-17 15:46:02,545 INFO: Reddit stream listener is initialized
+2024-12-17 15:46:02,545 INFO: Starting the Reddit stream
+2024-12-17 15:46:03,665 INFO: Number of posts streamed since the start: 0
+2024-12-17 15:46:03,667 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,668 ERROR: Post 1h4nffo could not be inserted into the table
+2024-12-17 15:46:03,676 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,676 ERROR: Post 1h5cr0t could not be inserted into the table
+2024-12-17 15:46:03,680 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,680 ERROR: Post 1h693t6 could not be inserted into the table
+2024-12-17 15:46:03,683 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,683 ERROR: Post 1h6di2w could not be inserted into the table
+2024-12-17 15:46:03,697 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,697 ERROR: Post 1h7na3n could not be inserted into the table
+2024-12-17 15:46:03,702 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,702 ERROR: Post 1h84ocb could not be inserted into the table
+2024-12-17 15:46:03,716 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,716 ERROR: Post 1h8fmem could not be inserted into the table
+2024-12-17 15:46:03,719 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,719 ERROR: Post 1h8xrwd could not be inserted into the table
+2024-12-17 15:46:03,728 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,728 ERROR: Post 1h9kl29 could not be inserted into the table
+2024-12-17 15:46:03,732 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,732 ERROR: Post 1h9mt3l could not be inserted into the table
+2024-12-17 15:46:03,738 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,738 ERROR: Post 1ha00bl could not be inserted into the table
+2024-12-17 15:46:03,745 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,745 ERROR: Post 1ha44qq could not be inserted into the table
+2024-12-17 15:46:03,758 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,758 ERROR: Post 1hbztnn could not be inserted into the table
+2024-12-17 15:46:03,765 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,765 ERROR: Post 1hcphno could not be inserted into the table
+2024-12-17 15:46:03,775 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,776 ERROR: Post 1hdpm62 could not be inserted into the table
+2024-12-17 15:46:03,780 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,780 ERROR: Post 1heavwx could not be inserted into the table
+2024-12-17 15:46:03,782 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,782 ERROR: Post 1henup7 could not be inserted into the table
+2024-12-17 15:46:03,786 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,786 ERROR: Post 1heq3za could not be inserted into the table
+2024-12-17 15:46:03,791 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,792 ERROR: Post 1hf1xqe could not be inserted into the table
+2024-12-17 15:46:03,793 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,794 ERROR: Post 1hfasxn could not be inserted into the table
+2024-12-17 15:46:03,798 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,798 ERROR: Post 1hfjohp could not be inserted into the table
+2024-12-17 15:46:03,801 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,801 ERROR: Post 1hfkuq2 could not be inserted into the table
+2024-12-17 15:46:03,802 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,802 ERROR: Post 1hfo8ow could not be inserted into the table
+2024-12-17 15:46:03,803 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:46:03,803 ERROR: Post 1hfrdnq could not be inserted into the table
+2024-12-17 15:46:03,815 INFO: Reached 100 posts limit, stopping the stream
+2024-12-17 15:46:03,815 INFO: The Reddit stream disconnected
+2024-12-17 15:47:33,906 INFO: Reddit stream listener is initialized
+2024-12-17 15:47:33,906 INFO: Starting the Reddit stream
+2024-12-17 15:47:35,186 INFO: Number of posts streamed since the start: 0
+2024-12-17 15:47:35,240 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:47:35,240 ERROR: Post 1hebwz1 could not be inserted into the table
+2024-12-17 15:47:35,271 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:47:35,271 ERROR: Post 1hf1cok could not be inserted into the table
+2024-12-17 15:47:35,297 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:47:35,297 ERROR: Post 1hfloxl could not be inserted into the table
+2024-12-17 15:47:35,305 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:47:35,305 ERROR: Post 1hfsnxw could not be inserted into the table
+2024-12-17 15:47:35,312 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:47:35,312 ERROR: Post 1hfvofz could not be inserted into the table
+2024-12-17 15:47:35,337 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:47:35,337 ERROR: Post 1hgfptg could not be inserted into the table
+2024-12-17 15:47:35,340 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:47:35,340 ERROR: Post 1hggaqt could not be inserted into the table
+2024-12-17 15:47:35,347 INFO: Reached 100 posts limit, stopping the stream
+2024-12-17 15:47:35,348 INFO: The Reddit stream disconnected
+2024-12-17 15:49:05,430 INFO: Reddit stream listener is initialized
+2024-12-17 15:49:05,430 INFO: Starting the Reddit stream
+2024-12-17 15:49:06,654 INFO: Number of posts streamed since the start: 0
+2024-12-17 15:49:06,676 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,676 ERROR: Post 1hfnqir could not be inserted into the table
+2024-12-17 15:49:06,677 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,677 ERROR: Post 1hfool4 could not be inserted into the table
+2024-12-17 15:49:06,684 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,684 ERROR: Post 1hfpbmb could not be inserted into the table
+2024-12-17 15:49:06,689 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,689 ERROR: Post 1hfq7pu could not be inserted into the table
+2024-12-17 15:49:06,693 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,693 ERROR: Post 1hfstk2 could not be inserted into the table
+2024-12-17 15:49:06,697 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,698 ERROR: Post 1hfujw6 could not be inserted into the table
+2024-12-17 15:49:06,731 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,731 ERROR: Post 1hg1q4s could not be inserted into the table
+2024-12-17 15:49:06,732 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,733 ERROR: Post 1hg20c7 could not be inserted into the table
+2024-12-17 15:49:06,737 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,737 ERROR: Post 1hg2g1q could not be inserted into the table
+2024-12-17 15:49:06,739 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,739 ERROR: Post 1hg3cex could not be inserted into the table
+2024-12-17 15:49:06,741 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,741 ERROR: Post 1hg3yyz could not be inserted into the table
+2024-12-17 15:49:06,751 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,751 ERROR: Post 1hg6ugf could not be inserted into the table
+2024-12-17 15:49:06,770 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,770 ERROR: Post 1hg9ola could not be inserted into the table
+2024-12-17 15:49:06,772 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,772 ERROR: Post 1hg9rut could not be inserted into the table
+2024-12-17 15:49:06,776 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,777 ERROR: Post 1hg62az could not be inserted into the table
+2024-12-17 15:49:06,795 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,795 ERROR: Post 1hge0mm could not be inserted into the table
+2024-12-17 15:49:06,801 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,801 ERROR: Post 1hgh4zb could not be inserted into the table
+2024-12-17 15:49:06,801 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,801 ERROR: Post 1hghckr could not be inserted into the table
+2024-12-17 15:49:06,807 ERROR: UNIQUE constraint failed: reddit_posts.id_str
+2024-12-17 15:49:06,807 ERROR: Post 1hgi5z0 could not be inserted into the table
+2024-12-17 15:49:06,820 INFO: Reached 100 posts limit, stopping the stream
+2024-12-17 15:49:06,820 INFO: The Reddit stream disconnected
+2024-12-17 15:50:36,897 INFO: Closed the database connection

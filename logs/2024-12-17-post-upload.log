@@ -1,0 +1,45 @@
+2024-12-17 16:40:54,714 INFO: ---------------- Logger started ----------------
+2024-12-17 16:40:54,714 INFO: Current UTC time is 2024-12-17 21:40:54
+2024-12-17 16:40:54,715 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/stream/../databases/stream.db
+2024-12-17 16:40:54,716 INFO: Connected to the database successfully
+2024-12-17 16:40:54,716 INFO: Search interval for posts: 2024-12-17 20:00:00 - 2024-12-17 21:00:00
+2024-12-17 16:42:39,471 INFO: ---------------- Logger started ----------------
+2024-12-17 16:42:39,471 INFO: Current UTC time is 2024-12-17 21:42:39
+2024-12-17 16:42:39,471 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/stream/../databases/stream.db
+2024-12-17 16:42:39,471 INFO: Connected to the database successfully
+2024-12-17 16:42:39,472 INFO: Search interval for posts: 2024-12-17 20:00:00 - 2024-12-17 21:00:00
+2024-12-17 16:43:26,206 INFO: ---------------- Logger started ----------------
+2024-12-17 16:43:26,206 INFO: Current UTC time is 2024-12-17 21:43:26
+2024-12-17 16:43:26,206 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/stream/../databases/stream.db
+2024-12-17 16:43:26,206 INFO: Connected to the database successfully
+2024-12-17 16:43:26,206 INFO: Search interval for posts: 2024-12-17 20:00:00 - 2024-12-17 21:00:00
+2024-12-17 16:43:26,218 INFO: Closed the database connection
+2024-12-17 16:43:26,218 INFO: 1 posts were retrieved from the database
+2024-12-17 16:43:26,218 INFO: Local path to save raw data: /home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:43:26,219 INFO: Writing reddit data into /home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:43:26,219 INFO: posts are successfully saved to the file
+2024-12-17 16:44:26,840 INFO: ---------------- Logger started ----------------
+2024-12-17 16:44:26,840 INFO: Current UTC time is 2024-12-17 21:44:26
+2024-12-17 16:44:26,840 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/stream/../databases/stream.db
+2024-12-17 16:44:26,840 INFO: Connected to the database successfully
+2024-12-17 16:44:26,840 INFO: Search interval for posts: 2024-12-17 20:00:00 - 2024-12-17 21:00:00
+2024-12-17 16:44:26,842 INFO: Closed the database connection
+2024-12-17 16:44:26,842 INFO: 1 posts were retrieved from the database
+2024-12-17 16:44:26,842 INFO: Local path to save raw data: /home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:44:26,842 INFO: Writing reddit data into /home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:44:26,842 INFO: posts are successfully saved to the file
+2024-12-17 16:44:26,843 INFO: S3 key for upload: posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:44:26,845 INFO: Copy "/home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json" to S3 bucket "trending-movies" and path "posts_raw/2024/12/17/20/2024-12-17-20.json"
+2024-12-17 16:50:47,214 INFO: ---------------- Logger started ----------------
+2024-12-17 16:50:47,214 INFO: Current UTC time is 2024-12-17 21:50:47
+2024-12-17 16:50:47,214 INFO: Try to connect to database: /home/clahad/Desktop/school/trending-movies/stream/../databases/stream.db
+2024-12-17 16:50:47,214 INFO: Connected to the database successfully
+2024-12-17 16:50:47,214 INFO: Search interval for posts: 2024-12-17 20:00:00 - 2024-12-17 21:00:00
+2024-12-17 16:50:47,223 INFO: Closed the database connection
+2024-12-17 16:50:47,223 INFO: 1 posts were retrieved from the database
+2024-12-17 16:50:47,223 INFO: Local path to save raw data: /home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:50:47,223 INFO: Writing reddit data into /home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:50:47,224 INFO: posts are successfully saved to the file
+2024-12-17 16:50:47,224 INFO: S3 key for upload: posts_raw/2024/12/17/20/2024-12-17-20.json
+2024-12-17 16:50:47,224 INFO: Copy "/home/clahad/Desktop/school/trending-movies/stream/posts_raw/2024/12/17/20/2024-12-17-20.json" to S3 bucket "trending-movies-clahad" and path "posts_raw/2024/12/17/20/2024-12-17-20.json"
+2024-12-17 16:50:47,782 INFO: The file is succesfully copied to S3

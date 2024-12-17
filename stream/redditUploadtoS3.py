@@ -32,7 +32,7 @@ def getPastHourInterval():
     return dt_start, datetime_start, datetime_end
 
 def retrieveDataFromDB(conn, datetime_start, datetime_end):
-    """ Retrieves the tweets from the database for given time interval
+    """ Retrieves the posts from the database for given time interval
 
     Args:
     conn : database connection object
@@ -40,12 +40,12 @@ def retrieveDataFromDB(conn, datetime_start, datetime_end):
     datetime_end (str) : datetime interval end
 
     Returns:
-    df (pandas dataframe) : raw tweet data
+    df (pandas dataframe) : raw post data
     """
-    logging.info('Search interval for tweets: {} - {}'.format(datetime_start, datetime_end))
+    logging.info('Search interval for posts: {} - {}'.format(datetime_start, datetime_end))
     # Construct the select query
-    select_query = '''SELECT tweet_raw FROM {} WHERE
-                        tweet_datetime > '{}' AND tweet_datetime < '{}'
+    select_query = '''SELECT reddit_raw FROM {} WHERE
+                        reddit_datetime > '{}' AND reddit_datetime < '{}'
                    '''.format(tbName, datetime_start, datetime_end)
     # Retrieve the data
     df = pd.read_sql_query(select_query, conn)
@@ -115,7 +115,7 @@ def savePostsLocal(df, local_path):
 if __name__ == "__main__":
     # Parse arguments
     parser = argparse.ArgumentParser(
-        description="Upload TMDB TV show data to S3",
+        description="Upload TMDB movie data to S3",
         add_help=True
     )
     parser.add_argument("path_config", type=str,
@@ -129,7 +129,7 @@ if __name__ == "__main__":
         sys.exit('The directory "{}" could not be created'.format(dirPosts))
 
     # Setup the logger
-    logName = date.today().strftime("%Y-%m-%d") + '-tweet-upload.log'
+    logName = date.today().strftime("%Y-%m-%d") + '-post-upload.log'
     setupLogger(dirLogs, logName)
 
     # Get datetime interval for the past hour
@@ -141,7 +141,7 @@ if __name__ == "__main__":
         logging.error('Error while connecting to the database')
         sys.exit(1)
 
-    # Get the tweet data streamed in the past hour
+    # Get the post data streamed in the past hour
     df = retrieveDataFromDB(conn, datetime_start, datetime_end)
 
     # Close the database connection
@@ -154,12 +154,12 @@ if __name__ == "__main__":
         logging.info('Closed the database connection')
 
     # Check the number of records
-    num_tweet = len(df)
-    if num_tweet == 0:
-        logging.error('No tweet was retrieved from the database')
+    num_post = len(df)
+    if num_post == 0:
+        logging.error('No post was retrieved from the database')
         sys.exit(1)
     else:
-        logging.info('{} tweets were retrieved from the database'.format(num_tweet))
+        logging.info('{} posts were retrieved from the database'.format(num_post))
 
     # Local directory and path to save
     local_dir, local_path = getLocalPartitionedPath(dirPosts, dt_save)
@@ -170,12 +170,12 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Save the file locally
-    if not saveTweetsLocal(df, local_path):
-        logging.error('The tweet could not be saved to local, will not upload to S3')
+    if not savePostsLocal(df, local_path):
+        logging.error('The post could not be saved to local, will not upload to S3')
         sys.exit(1)
 
     # Get S3 path to transfer the file
-    s3_path = getS3PartitionedPath(s3_key_tweet, dt_save)
+    s3_path = getS3PartitionedPath(s3_key_reddit, dt_save)
 
     # Read the API configuration file
     config = configparser.ConfigParser()

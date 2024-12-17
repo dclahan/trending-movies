@@ -1,5 +1,5 @@
 # Dolan Clahan DataBase Final Project:
-## EDA for Movie Trend Analytics
+### EDA for Movie Trend Analytics
 
 ## Introduction
 Enterprises increasingly rely on data-driven decisions, blending structured and unstructured data to uncover insights and improve user experience. This project proposes developing an Enterprise Data Architecture (EDA) to analyze movie trends using structured data from The Movie Database (TMDB) and unstructured data from social media platforms such as Twitter and Reddit. The goal is to create an automated analytics pipeline that identifies popular and trending movies based on TMDB statistics and social media mentions.
@@ -48,13 +48,17 @@ The most important fields for our purpose:
 
 
 # TODO:
-## PT2
- - [ ] finish streaming
- - [ ] connect to S3
+### PT2
+ - [ ] finish streaming (NEVER FINISHED! GRIND ON BROTHER)
+ - [x] connect to S3
+ - [ ] backfill s3 with data collected so far (Generate datetime intervals of one hour for the past since the 9th or 10th I guess)
  - [ ] DB like ERD (ETL(?))
- - [ ] cron jobs (AIRFLOW, LIGHTSAIL)
-## PT 3
+    - setup in hadoop after airflow jobs make sure data is ready to process.
+ - [ ] ETL (AIRFLOW) (HADOOP setup smth)
+ - [ ] cron jobs (LIGHTSAIL) 
+    - Want to run redditStreamer and then redditUploadtoS3 every morning (every hour or two??)
+### PT 3
  - [ ] Bert analize text (for business purposes??)
-## PT 4
+### PT 4
  - [ ] make analytics tables, trends graphs
  - [ ] host live updates (iffy)
