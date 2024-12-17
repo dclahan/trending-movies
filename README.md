@@ -16,7 +16,7 @@ Unstructured Data (Twitter and Reddit):
 ## Entity Relationship Diagram (ERD)
 The database will consist of a main dimension table of movies, having a child table of genre ids to be able to find information on multi-genred movies. There are three fact tables that have a primary foreign key of movie_ids, and primary keys of dates. The fact tables are designed to represent the number of mentions of a movie on respected social media platforms per day.
 
-![image]("./pics/ERD-tmdb.png") 
+![image](/pics/ERD-tmdb.png) 
 <!-- include abs path https://github.com/dclahan/.... -->
 
 ## Data Streaming
