@@ -13,7 +13,8 @@ from settings import dbPath, tbName, dirPosts, dirLogs, s3_bucket, s3_key_reddit
 from utils import createDir, setupLogger, connectToDB, uploadFileToS3
 
 def getPastHourInterval():
-    """ Calculates the time interval for the past hour
+    """ 
+    Calculates the time interval for the past hour
 
     Returns:
     dt_start (datetime) : datetime object for the past hour start
@@ -31,8 +32,38 @@ def getPastHourInterval():
     datetime_start = dt_start.strftime("%Y-%m-%d %H:%M:%S")
     return dt_start, datetime_start, datetime_end
 
+def getHourlyIntervals(dt_start: datetime, dt_end: datetime):
+    """
+    Calculates the formatted datetime for all hourly intervals in a given time range.
+
+    Args:
+    dt_start (datetime): Start of the time range (inclusive).
+    dt_end (datetime): End of the time range (exclusive).
+
+    Returns:
+    hourly_intervals (list): List of formatted datetime strings for each hour in the range.
+    """
+    # Ensure start and end are in hourly format
+    dt_start = dt_start.replace(minute=0, second=0, microsecond=0)
+    dt_end = dt_end.replace(minute=0, second=0, microsecond=0)
+    
+    # Logging the range
+    logging.info('Generating hourly intervals from {} to {}'.format(
+        dt_start.strftime("%Y-%m-%d %H:%M:%S"), dt_end.strftime("%Y-%m-%d %H:%M:%S")
+    ))
+    
+    # Generate the hourly intervals
+    current_hour = dt_start
+    hourly_intervals = []
+    while current_hour < dt_end:
+        hourly_intervals.append(current_hour.strftime("%Y-%m-%d %H:%M:%S"))
+        current_hour += timedelta(hours=1)
+    
+    return hourly_intervals
+
 def retrieveDataFromDB(conn, datetime_start, datetime_end):
-    """ Retrieves the posts from the database for given time interval
+    """ 
+    Retrieves the posts from the database for given time interval
 
     Args:
     conn : database connection object
@@ -52,7 +83,8 @@ def retrieveDataFromDB(conn, datetime_start, datetime_end):
     return df
 
 def getLocalPartitionedPath(dir_save, dt_save):
-    """ Returns a partitioned directory and path based on the given datetime
+    """ 
+    Returns a partitioned directory and path based on the given datetime
 
     Args:
     dir_save (str) : the local directory for saving
@@ -69,7 +101,8 @@ def getLocalPartitionedPath(dir_save, dt_save):
     return local_dir, local_path
 
 def getS3PartitionedPath(key_prefix, dt_save):
-    """ Returns a partitioned S3 path based on the given datetime
+    """ 
+    Returns a partitioned S3 path based on the given datetime
 
     Args:
     key_prefix (str) : key prefix on S3
@@ -86,7 +119,8 @@ def getS3PartitionedPath(key_prefix, dt_save):
     return s3_path
 
 def savePostsLocal(df, local_path):
-    """ Saves raw posts locally using the given path
+    """ 
+    Saves raw posts locally using the given path
 
     Args:
     df (pandas dataframe) : raw reddit data
@@ -112,28 +146,10 @@ def savePostsLocal(df, local_path):
             fp.close()
     return isSuccess
 
-if __name__ == "__main__":
-    # Parse arguments
-    parser = argparse.ArgumentParser(
-        description="Upload TMDB movie data to S3",
-        add_help=True
-    )
-    parser.add_argument("path_config", type=str,
-                        help="Path to configuration file with API credentials")
-    args = parser.parse_args()
 
-    # Create the required directories if not exits
-    if not createDir(dirLogs):
-        sys.exit('The directory "{}" could not be created'.format(dirLogs))
-    if not createDir(dirPosts):
-        sys.exit('The directory "{}" could not be created'.format(dirPosts))
-
-    # Setup the logger
-    logName = date.today().strftime("%Y-%m-%d") + '-post-upload.log'
-    setupLogger(dirLogs, logName)
-
-    # Get datetime interval for the past hour
-    dt_save, datetime_start, datetime_end = getPastHourInterval()
+def main(args, dt_save, datetime_start, datetime_end):
+    # # Get datetime interval for the past hour
+    # dt_save, datetime_start, datetime_end = getPastHourInterval()
 
     # Connect to the database
     conn = connectToDB(dbPath)
@@ -157,6 +173,7 @@ if __name__ == "__main__":
     num_post = len(df)
     if num_post == 0:
         logging.error('No post was retrieved from the database')
+        # return    # uncomment to backfill        
         sys.exit(1)
     else:
         logging.info('{} posts were retrieved from the database'.format(num_post))
@@ -167,11 +184,13 @@ if __name__ == "__main__":
     # Create the local directory for saving
     if not createDir(local_dir):
         logging.error('The directory "{}" could not be created')
+        # return    # uncomment to backfill
         sys.exit(1)
 
     # Save the file locally
     if not savePostsLocal(df, local_path):
         logging.error('The post could not be saved to local, will not upload to S3')
+        # return    # uncomment to backfill
         sys.exit(1)
 
     # Get S3 path to transfer the file
@@ -194,5 +213,47 @@ if __name__ == "__main__":
         else:
             logging.warning('Waiting 2 seconds and will try to upload to S3 again')
             time.sleep(2)
+
+if __name__ == "__main__":
+    # Parse arguments
+    parser = argparse.ArgumentParser(
+        description="Upload TMDB movie data to S3",
+        add_help=True
+    )
+    parser.add_argument("path_config", type=str,
+                        help="Path to configuration file with API credentials")
+    args = parser.parse_args()
+
+    # Create the required directories if not exits
+    if not createDir(dirLogs):
+        sys.exit('The directory "{}" could not be created'.format(dirLogs))
+    if not createDir(dirPosts):
+        sys.exit('The directory "{}" could not be created'.format(dirPosts))
+
+    # Setup the logger
+    logName = date.today().strftime("%Y-%m-%d") + '-post-upload.log'
+    setupLogger(dirLogs, logName)
+
+
+
+    # regular mode
+    # Get datetime interval for the past hour
+    dt_save, datetime_start, datetime_end = getPastHourInterval()
+    main(args, dt_save, datetime_start, datetime_end)
+
+
+    """
+    # backfill mode
+    start_time = datetime.utcnow() - timedelta(hours=240) # ten day backfill
+    end_time = datetime.utcnow() - timedelta(hours=3)
+    dt_save = start_time
+
+    hourly_intervals = getHourlyIntervals(start_time, end_time)
+
+    for i in range(len(hourly_intervals) - 1):
+        main(args, dt_save, hourly_intervals[i], hourly_intervals[i+1])
+        dt_save = dt_save + timedelta(hours=1)
+    """
+
 
     sys.exit(0)
