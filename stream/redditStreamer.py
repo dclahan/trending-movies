@@ -188,7 +188,7 @@ if __name__ == "__main__":
 
     # Read the API configuration file
     config = configparser.ConfigParser()
-    config.read('./../api.cfg')
+    config.read('./../api.cfg') #not good, use argparser + absolute paths
 
     # Create tweepy api
     api = createRedditInstance(

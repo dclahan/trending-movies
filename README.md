@@ -43,11 +43,16 @@ The most important fields for our purpose:
     "release_date": "1957-04-10",   "vote_average": 8.5,   "vote_count": 8699
 }`
 
-## 
+## Data Pipeline
+
+Using AWS products to stream data into S3 buckets, and then perform ETL on that data.
+
+![image](/pics/workflow.jpg)
 
 
 
 # TODO:
+- [ ] update resume with all this exciting new stuff and systems and products ur using
 ### PT2
  - [ ] finish streaming (NEVER FINISHED! GRIND ON BROTHER)
  - [x] connect to S3
@@ -56,8 +61,8 @@ The most important fields for our purpose:
  - [ ] cron jobs (LIGHTSAIL) 
     - Want to run redditStreamer and then tmdb/redditUploadtoS3 every x hour(s) every day or so
  - [ ] ETL get cookin (to make db like ERD)
-    - aws airflow dags get them happening (when do they execute? how to get them to execute?)
-    - setup in hadoop after airflow jobs make sure data is ready to process.
+ - [ ] aws airflow dags get them happening (when do they execute? how to get them to execute?)
+    - setup in hadoop -> airflow jobs make sure data is ready to process??
 ### PT 3
  - [ ] Bert analize text (for business purposes??)
 ### PT 4

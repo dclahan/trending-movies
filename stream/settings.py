@@ -28,5 +28,5 @@ s3_key_tmdb = 'tmdb_raw'
 s3_upload_try = 5
 
 # movies filepath
-movies_fname = '../movies_list.csv'
+movies_fname = os.path.join(os.getcwd(), '../data/movies_list.csv')
 movies_fpath = os.path.join(os.getcwd(), movies_fname)
