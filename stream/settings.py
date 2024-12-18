@@ -3,7 +3,6 @@ import os
 # Directory names
 DB_DIR = '../databases'
 LOG_DIR = '../logs'
-# TWEET_DIR = 'tweet_raw'
 POSTS_DIR = 'posts_raw'
 TMDB_DIR = 'tbdm_raw'
 
@@ -11,7 +10,6 @@ TMDB_DIR = 'tbdm_raw'
 dirDB = os.path.join(os.getcwd(), DB_DIR)
 dirLogs = os.path.join(os.getcwd(), LOG_DIR)
 dirPosts = os.path.join(os.getcwd(), POSTS_DIR)
-# dirTweet = os.path.join(os.getcwd(), TWEET_DIR)
 dirTmdb = os.path.join(os.getcwd(), TMDB_DIR)
 
 # Database parameters

@@ -51,12 +51,13 @@ The most important fields for our purpose:
 ### PT2
  - [ ] finish streaming (NEVER FINISHED! GRIND ON BROTHER)
  - [x] connect to S3
- - [ ] backfill s3 with data collected so far (Generate datetime intervals of one hour for the past since the 9th or 10th I guess)
- - [ ] DB like ERD (ETL(?))
-    - setup in hadoop after airflow jobs make sure data is ready to process.
- - [ ] ETL (AIRFLOW) (HADOOP setup smth)
+ - [x] backfill s3 with data collected so far (Generate datetime intervals of one hour for the past since the 9th or 10th I guess)
+ - [x] tmdb stream to s3
  - [ ] cron jobs (LIGHTSAIL) 
-    - Want to run redditStreamer and then redditUploadtoS3 every morning (every hour or two??)
+    - Want to run redditStreamer and then tmdb/redditUploadtoS3 every x hour(s) every day or so
+ - [ ] ETL get cookin (to make db like ERD)
+    - aws airflow dags get them happening (when do they execute? how to get them to execute?)
+    - setup in hadoop after airflow jobs make sure data is ready to process.
 ### PT 3
  - [ ] Bert analize text (for business purposes??)
 ### PT 4

@@ -234,16 +234,13 @@ if __name__ == "__main__":
     logName = date.today().strftime("%Y-%m-%d") + '-post-upload.log'
     setupLogger(dirLogs, logName)
 
-
-
     # regular mode
     # Get datetime interval for the past hour
     dt_save, datetime_start, datetime_end = getPastHourInterval()
     main(args, dt_save, datetime_start, datetime_end)
 
-
     """
-    # backfill mode
+    # backfill S3 mode
     start_time = datetime.utcnow() - timedelta(hours=240) # ten day backfill
     end_time = datetime.utcnow() - timedelta(hours=3)
     dt_save = start_time
@@ -254,6 +251,5 @@ if __name__ == "__main__":
         main(args, dt_save, hourly_intervals[i], hourly_intervals[i+1])
         dt_save = dt_save + timedelta(hours=1)
     """
-
 
     sys.exit(0)
