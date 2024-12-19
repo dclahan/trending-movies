@@ -3,8 +3,8 @@ import os
 # Directory names
 DB_DIR = '../databases'
 LOG_DIR = '../logs'
-POSTS_DIR = 'posts_raw'
-TMDB_DIR = 'tbdm_raw'
+POSTS_DIR = '../raw_data/posts_raw'
+TMDB_DIR = '../raw_data/tbdm_raw'
 
 # Directories
 dirDB = os.path.join(os.getcwd(), DB_DIR)

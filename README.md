@@ -50,19 +50,25 @@ Using AWS products to stream data into S3 buckets, and then perform ETL on that 
 ![image](/pics/workflow.jpg)
 
 
+glue stuff
+s3 stuff
+document!!!
+airflow cron jobs
+DOCUMENT!!!  
+
+
 
 # TODO:
 - [ ] update resume with all this exciting new stuff and systems and products ur using
 ### PT2
- - [ ] finish streaming (NEVER FINISHED! GRIND ON BROTHER)
+ - [x] finish streaming
  - [x] connect to S3
  - [x] backfill s3 with data collected so far (Generate datetime intervals of one hour for the past since the 9th or 10th I guess)
  - [x] tmdb stream to s3
- - [ ] cron jobs (LIGHTSAIL) 
-    - Want to run redditStreamer and then tmdb/redditUploadtoS3 every x hour(s) every day or so
- - [ ] ETL get cookin (to make db like ERD)
- - [ ] aws airflow dags get them happening (when do they execute? how to get them to execute?)
-    - setup in hadoop -> airflow jobs make sure data is ready to process??
+ - [x] cron jobs (LIGHTSAIL) 
+    - Want to run redditStreamer and then tmdb/redditUploadtoS3 every hour every day (for now - remember to stop that)
+ - [x] ETL get cookin (to make db like ERD)
+ - [~] aws glue get it happening
 ### PT 3
  - [ ] Bert analize text (for business purposes??)
 ### PT 4

@@ -4,3 +4,4 @@ __pycache__
 *_raw
 logs
 temp.py
+*local.py

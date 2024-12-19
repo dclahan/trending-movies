@@ -1,32 +1,24 @@
-import argparse
-from pyspark.sql import SparkSession
+import sys
+from awsglue.context import GlueContext
+from awsglue.job import Job
+from awsglue.utils import getResolvedOptions
+from pyspark.context import SparkContext
 from pyspark.sql.functions import col, to_date, year, month, dayofmonth
 
-def create_spark_session():
-    """ Creates Spark Session object with appropriate configurations.
+'''
+glue job params
+--path_tmdb     s3://trending-movies-clahad/tmdb_raw/
+--path_output   s3://trending-movies-clahad/data/movie_trends_database/tmdb_mentions_db/
+--date          2024-12-18
+'''
 
-    Returns:
-    spark: Spark Session object
-    """
-    spark = SparkSession \
-        .builder \
-        .appName("ETL TMDB") \
-        .getOrCreate()
-
-    # Set the log level
-    spark.sparkContext.setLogLevel('WARN')
-    # Enable dynamic partition overwrite
-    spark.conf.set("spark.sql.sources.partitionOverwriteMode", "dynamic")
-
-    return spark
-
-def process_tmdb(spark, input_path, date):
+def process_tmdb(glueContext, input_path, date):
     """ 
     Reads raw TMDB movie data and
     selects relevant quantitative fields for given date
 
     Args:
-    spark : Spark Session object
+    glueContext : GlueContext object
     input_path (str) : input path for TMDB movie data
     date (str) : date in 'YYYY-MM-DD' format to filter TMDB data
 
@@ -34,6 +26,7 @@ def process_tmdb(spark, input_path, date):
     tmdb_stats (Dataframe) : movie stats from TMDB data
     """
     # Read the TMDB raw data
+    spark = glueContext.spark_session
     tmdb_raw = spark.read.json(input_path)
 
     # Select relevant quantitative fields
@@ -45,38 +38,38 @@ def process_tmdb(spark, input_path, date):
 
     return tmdb_stats
 
-def save_tmdb_stat(spark, tmdb_stats, output_path):
+def save_tmdb_stat(glueContext, tmdb_stats, output_path):
     """ 
-    Saves TMDB movie stats in Parquet format partitioned by year, month and day
+    Saves TMDB movie stats in Parquet format partitioned by year, month, and day
 
     Args:
-    spark : Spark Session object
-    tmdb_stats (Dataframe) : movie stats from TMDB api
+    glueContext : GlueContext object
+    tmdb_stats (Dataframe) : movie stats from TMDB API
     output_path (str) : output path to save the given dataframe
     """
     # Add year, month, day columns for partitioning
     tmdb_stats_save = tmdb_stats.withColumn('year', year('date')) \
                                 .withColumn('month', month('date')) \
-                                .withColumn('day', dayofmonth('date')) \
+                                .withColumn('day', dayofmonth('date'))
 
     # Save with year, month, day partitions
-    tmdb_stats_save.write.partitionBy('year','month','day').mode("overwrite").parquet(output_path)
-    return
+    tmdb_stats_save.write.partitionBy('year', 'month', 'day').mode("overwrite").parquet(output_path)
 
 if __name__ == "__main__":
-
     # Parse arguments
-    parser = argparse.ArgumentParser(description="ETL TMDB")
-    parser.add_argument("path_tmdb", type=str, help="Path for raw TMDB data")
-    parser.add_argument("path_output", type=str, help="Output path to save TMDB stats")
-    parser.add_argument("date", type=str, help="Date in 'YYYY-MM-DD' format to filter TMDB data")
-    args = parser.parse_args()
+    args = getResolvedOptions(sys.argv, ['JOB_NAME', 'path_tmdb', 'path_output', 'date'])
 
-    # Create the spark session
-    spark = create_spark_session()
+    # Initialize GlueContext and Job
+    sc = SparkContext()
+    glueContext = GlueContext(sc)
+    job = Job(glueContext)
+    job.init(args['JOB_NAME'], args)
 
     # Process TMDB movie data
-    tmdb_stats = process_tmdb(spark, args.path_tmdb, args.date)
+    tmdb_stats = process_tmdb(glueContext, args['path_tmdb'], args['date'])
 
     # Save the TMDB movie stats
-    save_tmdb_stat(spark, tmdb_stats, args.path_output)
+    save_tmdb_stat(glueContext, tmdb_stats, args['path_output'])
+
+    # Commit the Glue job
+    job.commit()
