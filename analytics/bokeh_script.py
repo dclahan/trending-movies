@@ -20,9 +20,9 @@ PREFIX = "data/movie_trends_database/posts_clean/posts_clean/"
 def load_posts_clean_data(start_date, end_date,
                     aws_access_key_id, aws_secret_access_key, region_name):
     # Connect to S3
-    s3 = s3fs.S3FileSystem( anon=False, 
-                            key=aws_access_key_id, 
-                            secret=aws_secret_access_key, 
+    s3 = s3fs.S3FileSystem( anon=False,
+                            key=aws_access_key_id,
+                            secret=aws_secret_access_key,
                             client_kwargs={'region_name': region_name}
                             )
     # Generate list of dates within the range
@@ -51,13 +51,13 @@ def load_posts_clean_data(start_date, end_date,
 def load_data(aws_access_key_id, aws_secret_access_key, region_name):
     # Connect to S3
     s3_client = boto3.client('s3',
-                            aws_access_key_id=aws_access_key_id, 
-                            aws_secret_access_key=aws_secret_access_key, 
+                            aws_access_key_id=aws_access_key_id,
+                            aws_secret_access_key=aws_secret_access_key,
                             region_name=region_name
-    )    
-    s3 = s3fs.S3FileSystem( anon=False, 
-                            key=aws_access_key_id, 
-                            secret=aws_secret_access_key, 
+    )
+    s3 = s3fs.S3FileSystem( anon=False,
+                            key=aws_access_key_id,
+                            secret=aws_secret_access_key,
                             client_kwargs={'region_name': region_name}
                             )
     def read_csv_from_s3(key):
@@ -96,7 +96,7 @@ start_date = "2024-12-08"
 end_date = "2024-12-17"
 
 # Load data
-posts_clean = load_posts_clean_data(start_date, end_date, 
+posts_clean = load_posts_clean_data(start_date, end_date,
                                     config.get('AWS','ACCESS_KEY_ID'),
                                     config.get('AWS','SECRET_ACCESS_KEY'),
                                     config.get('AWS','REGION')
@@ -109,12 +109,12 @@ tmdb_clean, date_dim, mov_dim, genres, prod_companies = load_data(
 
 
 posts_clean['date_post'] = pd.to_datetime(posts_clean[['year', 'month', 'day']]).dt.date # maybe not needed
-posts_clean['date_string'] = pd.to_datetime(posts_clean['date_post']).dt.strftime('%Y-%m-%d') 
+posts_clean['date_string'] = pd.to_datetime(posts_clean['date_post']).dt.strftime('%Y-%m-%d')
 date_dim['date_string'] = pd.to_datetime(date_dim['date']).dt.strftime('%Y-%m-%d')
 
 # Merge data for visualization
 merged_data = pd.merge(posts_clean, tmdb_clean, on=["id"], how="inner")
-merged_data = pd.merge(merged_data, date_dim, on="date_string", how="inner") 
+merged_data = pd.merge(merged_data, date_dim, on="date_string", how="inner")
 merged_data = pd.merge(merged_data, mov_dim, on="id", how="inner")
 
 # Convert date column to datetime format
@@ -147,8 +147,8 @@ bar.y_range.start = 0
 
 # Widgets
 movie_select = Select(title="Select Movie:", value="All", options=["All"] + merged_data["name"].unique().tolist())
-date_slider = DateRangeSlider(title="Select Date Range:", start=min(merged_data["date_string"]), 
-                            end=max(merged_data["date_string"]), 
+date_slider = DateRangeSlider(title="Select Date Range:", start=min(merged_data["date_string"]),
+                            end=max(merged_data["date_string"]),
                             value=(min(merged_data["date_string"]), max(merged_data["date_string"])))
 
 # Update function

@@ -16,7 +16,7 @@ Unstructured Data (Twitter and Reddit):
 ## Entity Relationship Diagram (ERD)
 The database will consist of a main dimension table of movies, having a child table of genre ids to be able to find information on multi-genred movies. There are three fact tables that have a primary foreign key of movie_ids, and primary keys of dates. The fact tables are designed to represent the number of mentions of a movie on respected social media platforms per day.
 
-![image](/pics/ERD-tmdb.png) 
+![image](/pics/ERD-tmdb.png)
 
 ## Data Streaming
 ### Reddit object
@@ -25,9 +25,9 @@ The Reddit object of Reddit API has a complex nested JSON structure
 Simplified view with important fields:
 
 `{
-    "title": "Hildur Gudnadottir (\“Chernobyl\”, \“Joker\”) to Score \“28 Years Later II: The Bone Temple\”", 
-    "selftext": "Looks like my goat is back at it again on the fire scores", 
-    "subreddit_name_prefixed": "r/movies", 
+    "title": "Hildur Gudnadottir (\“Chernobyl\”, \“Joker\”) to Score \“28 Years Later II: The Bone Temple\”",
+    "selftext": "Looks like my goat is back at it again on the fire scores",
+    "subreddit_name_prefixed": "r/movies",
     "upvote_ratio": 0.92,    “id” : “1hbf5xs”,   “created_utc” : 1734045174
 }`
 
@@ -48,16 +48,16 @@ Data Lake architecture on AWS Simple Storage Service (S3) is used to store both 
 `post_clean` fact table:
 | Column | Type | Description |
 | ------ | ---- | ----------- |
-| `id` | `long` | Movie id | 
+| `id` | `long` | Movie id |
 | `date` | `date` | UTC date of posts |
 | `subreddit` | `string` | Subreddit of post that mentions movie |
 | `text_count` | `long` | Number of posts whose text include the movie name |
 | `post_count` | `long` | Number of posts which mentions the movie either in title or body |
- 
+
  `tmdb_clean` fact table:
 | Column | Type | Description |
 | ------ | ---- | ----------- |
-| `id` | `long` | Movie id | 
+| `id` | `long` | Movie id |
 | `date` | `date` | UTC date |
 | `vote_count` | `long` | Number of votes for the movie on TMDB website |
 | `vote_average` | `double` | Average vote for the movie on TMDB website |
@@ -66,7 +66,7 @@ Data Lake architecture on AWS Simple Storage Service (S3) is used to store both 
  `date` dimention table:
 | Column | Type | Description |
 | ------ | ---- | ----------- |
-| `date` | `date` | UTC date | 
+| `date` | `date` | UTC date |
 | `weekday` | `int` | Day of the week starting from 1 (Monday) |
 | `day` | `int` | Day of the month |
 | `month` | `int` | Month |
@@ -75,7 +75,7 @@ Data Lake architecture on AWS Simple Storage Service (S3) is used to store both 
  `mov` dimention table:
 | Column | Type | Description |
 | ------ | ---- | ----------- |
-| `id` | `long` | Movie id | 
+| `id` | `long` | Movie id |
 | `name` | `string` | Name of the movie |
 | `original_name` | `string` | Original name of the movie |
 | `original_language` | `string` | Original language of the movie |
@@ -85,13 +85,13 @@ Data Lake architecture on AWS Simple Storage Service (S3) is used to store both 
  `genres` table:
 | Column | Type | Description |
 | ------ | ---- | ----------- |
-| `id` | `int` | Genre id | 
+| `id` | `int` | Genre id |
 | `name` | `string` | Genre name |
 
  `production_companies` table:
 | Column | Type | Description |
 | ------ | ---- | ----------- |
-| `id` | `int` | Production company id | 
+| `id` | `int` | Production company id |
 | `name` | `string` | Production company name |
 | `origin_country` | `string` | Production company's country of origin |
 
@@ -109,15 +109,15 @@ The data pipeline for this project involves automating data collection, processi
 2. **ETL (Extract, Transform, Load) Pipeline**: The ETL process was implemented using Amazon Glue services. The key steps include:
    - **Extraction**: Raw Reddit posts and TMDB data are extracted from the S3 bucket.
    - **Data Cleaning**: Corrupt or incorrectly stored values are identified and corrected. This step ensures the integrity and consistency of the data.
-   - **Data Transformation**: The cleaned data is structured into fact tables and dimension tables for tracking daily movie mentions on Reddit, as well as populatrity metrics from TMDB. 
+   - **Data Transformation**: The cleaned data is structured into fact tables and dimension tables for tracking daily movie mentions on Reddit, as well as populatrity metrics from TMDB.
 
 3. **Data Upload**: The transformed data, now conforming to the Entity-Relationship Diagram (ERD) outlined earlier, is uploaded back to the S3 bucket. This clean data is accessible via the S3 Web client and serves as the backend for the application, which visualizes daily movie trends from Reddit posts and TMDB popularity metrics.
 
 ## Data Visualization Dashboard
 
-The application is built using the Bokeh library and Python. The Bokeh library provides a flexible and interactive visualization framework for creating interactive and dynamic data visualizations. Given more time, I would have liked to be able to host the application on a cloud platform like AWS or GCP, but I was unable to find a suitable solution within the time frame. 
+The application is built using the Bokeh library and Python. The Bokeh library provides a flexible and interactive visualization framework for creating interactive and dynamic data visualizations. Given more time, I would have liked to be able to host the application on a cloud platform like AWS or GCP, but I was unable to find a suitable solution within the time frame.
 
-The application is designed to visualize the daily trends for each movie mentioned in a Reddit post over the past week. The implementation results in a dashboard that displays the number of mentions, popularity, and a ranking of the top movies mentioned in the past week. The dashboard is interactive and allows users to select a movie and a date range to view the trends for that movie.
+The application is designed to visualize the daily trends for each movie mentioned in a Reddit post over the past week. The implementation results in a dashboard that displays the number of mentions, popularity, and a ranking of the top movies mentioned in the past week. The dashboard is interactive and allows users to select a movie and a date range to view the trends for that movie. The dashboard will update in real-time as new posts are uploaded to the S3 bucket.
 
 | ![image](/pics/dashboard.png) |
 |:--:|
@@ -140,28 +140,28 @@ The application is designed to visualize the daily trends for each movie mention
 
 The project has the potential to generate significant value for businesses in various ways:
 
-**Market Analysis for Movie Studios**:  
-   - Track real-time and historical movie discussions and sentiment on social platforms like Reddit.  
-   - Provide insights into audience reactions, enabling better marketing and release strategies.  
+**Market Analysis for Movie Studios**:
+   - Track real-time and historical movie discussions and sentiment on social platforms like Reddit.
+   - Provide insights into audience reactions, enabling better marketing and release strategies.
 
-**Audience Sentiment Insights**:  
-   - Deliver sentiment analyses for movies, helping studios understand public perception post-release or during promotional campaigns.  
-   - Identify key pain points or praise-worthy elements that can influence sequels or spinoffs.  
+**Audience Sentiment Insights**:
+   - Deliver sentiment analyses for movies, helping studios understand public perception post-release or during promotional campaigns.
+   - Identify key pain points or praise-worthy elements that can influence sequels or spinoffs.
 
-**Competitive Analysis for Streaming Platforms**:  
-   - Monitor trending movies and topics to curate or prioritize popular content on platforms like Netflix, Amazon Prime, or Hulu.  
+**Competitive Analysis for Streaming Platforms**:
+   - Monitor trending movies and topics to curate or prioritize popular content on platforms like Netflix, Amazon Prime, or Hulu.
 
-**Advertising and Sponsorship Opportunities**:  
-   - Help brands identify movies or genres with rising popularity to target their sponsorships or ads for maximum reach.  
+**Advertising and Sponsorship Opportunities**:
+   - Help brands identify movies or genres with rising popularity to target their sponsorships or ads for maximum reach.
 
-**Investment Insights**:  
-   - Provide data for private equity firms or investors to gauge potential success of upcoming films, franchises, or production houses based on popularity trends.  
+**Investment Insights**:
+   - Provide data for private equity firms or investors to gauge potential success of upcoming films, franchises, or production houses based on popularity trends.
 
-**Event Timing Optimization**:  
-   - Help cinemas, festivals, or streaming services plan events, premieres, or promotions based on trending movie discussions.  
+**Event Timing Optimization**:
+   - Help cinemas, festivals, or streaming services plan events, premieres, or promotions based on trending movie discussions.
 
-**Content Creation Guidance**:  
-   - Support writers, bloggers, and influencers with data on trending movies or themes to tailor their content for maximum engagement.  
+**Content Creation Guidance**:
+   - Support writers, bloggers, and influencers with data on trending movies or themes to tailor their content for maximum engagement.
 
 
 ## Machine Learning Implementations
@@ -185,7 +185,7 @@ The current implementation is limited by the financial constraints of accessing 
    - Accessing Twitter’s premium API tier would allow for streaming larger volumes of tweets. This would significantly expand the dataset and improve trend analysis by integrating discussions from another major social media platform.
 
 **Additional Data Sources**:
-   - Incorporating data from other platforms such as YouTube, Letterboxd, or IMDb to enhance the analysis and provide a multi-dimensional view of movie popularity. This would require additional web scraping or API integrations. 
+   - Incorporating data from other platforms such as YouTube, Letterboxd, or IMDb to enhance the analysis and provide a multi-dimensional view of movie popularity. This would require additional web scraping or API integrations.
 
 **Real-Time Processing**:
    - Transitioning to real-time data ingestion and processing pipelines using tools like Apache Kafka and Spark Streaming to provide up-to-the-minute insights.
@@ -193,21 +193,21 @@ The current implementation is limited by the financial constraints of accessing 
 **Advanced Analytics Dashboards**:
    - Developing more sophisticated visualizations and dashboards to display movie trends, sentiment analyses, and predictive insights in an interactive and user-friendly format.
 
-<!-- 
+<!--
 # TODO:
 - [ ] update resume with all this exciting new stuff and systems and products ur using
 ### PT2
  - [x] finish streaming
  - [x] connect to S3
- - [x] backfill s3 with data collected so far (Generate datetime intervals of one hour for the past since the 9th or 10th I guess)
+ - [x] backfill s3 with data collected so far 
  - [x] tmdb stream to s3
- - [x] cron jobs (LIGHTSAIL) 
+ - [x] cron jobs (LIGHTSAIL)
     - Want to run redditStreamer and then tmdb/redditUploadtoS3 every hour every day (for now - remember to stop that)
  - [x] ETL get cookin (to make db like ERD)
  - [~] aws glue get it happening
 ### PT 3
- - [ ] Bert analize text (for business purposes)
+ - [x] Bert analize text (for business purposes)
 ### PT 4
- - [ ] make analytics tables, trends graphs
- - [ ] host live updates (iffy)
+ - [x] make analytics tables, trends graphs
+ - [~] host live updates (iffy)
 -->

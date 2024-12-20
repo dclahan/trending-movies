@@ -13,7 +13,7 @@ from settings import dbPath, tbName, dirPosts, dirLogs, s3_bucket, s3_key_reddit
 from utils import createDir, setupLogger, connectToDB, uploadFileToS3
 
 def getPastHourInterval():
-    """ 
+    """
     Calculates the time interval for the past hour
 
     Returns:
@@ -46,23 +46,23 @@ def getHourlyIntervals(dt_start: datetime, dt_end: datetime):
     # Ensure start and end are in hourly format
     dt_start = dt_start.replace(minute=0, second=0, microsecond=0)
     dt_end = dt_end.replace(minute=0, second=0, microsecond=0)
-    
+
     # Logging the range
     logging.info('Generating hourly intervals from {} to {}'.format(
         dt_start.strftime("%Y-%m-%d %H:%M:%S"), dt_end.strftime("%Y-%m-%d %H:%M:%S")
     ))
-    
+
     # Generate the hourly intervals
     current_hour = dt_start
     hourly_intervals = []
     while current_hour < dt_end:
         hourly_intervals.append(current_hour.strftime("%Y-%m-%d %H:%M:%S"))
         current_hour += timedelta(hours=1)
-    
+
     return hourly_intervals
 
 def retrieveDataFromDB(conn, datetime_start, datetime_end):
-    """ 
+    """
     Retrieves the posts from the database for given time interval
 
     Args:
@@ -83,7 +83,7 @@ def retrieveDataFromDB(conn, datetime_start, datetime_end):
     return df
 
 def getLocalPartitionedPath(dir_save, dt_save):
-    """ 
+    """
     Returns a partitioned directory and path based on the given datetime
 
     Args:
@@ -101,7 +101,7 @@ def getLocalPartitionedPath(dir_save, dt_save):
     return local_dir, local_path
 
 def getS3PartitionedPath(key_prefix, dt_save):
-    """ 
+    """
     Returns a partitioned S3 path based on the given datetime
 
     Args:
@@ -119,7 +119,7 @@ def getS3PartitionedPath(key_prefix, dt_save):
     return s3_path
 
 def savePostsLocal(df, local_path):
-    """ 
+    """
     Saves raw posts locally using the given path
 
     Args:
@@ -173,7 +173,7 @@ def main(args, dt_save, datetime_start, datetime_end):
     num_post = len(df)
     if num_post == 0:
         logging.error('No post was retrieved from the database')
-        # return    # uncomment to backfill        
+        # return    # uncomment to backfill
         sys.exit(1)
     else:
         logging.info('{} posts were retrieved from the database'.format(num_post))

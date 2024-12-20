@@ -81,14 +81,14 @@ def get_dim_tmdb(movies_id):
             prod_co_id, prod_co_name, prod_co_country = int(prod_co['id']), prod_co['name'], prod_co['origin_country']
             if not ((df_prod_co['id'] == prod_co_id) & (df_prod_co['name'] == prod_co_name)).any():
                 df_prod_co.loc[len(df_prod_co),:] = prod_co_id, prod_co_name, prod_co_country
-        # Movie 
+        # Movie
         genres_id = []
         for genre in movie_data.get('genres', []):
             genres_id.append(int(genre['id']))
         production_companies_id = []
         for prod_co in movie_data.get('production_companies', []):
             production_companies_id.append(int(prod_co['id']))
-        df_movie.loc[len(df_movie),:] = [int(movie_data['id']), movie_data['title'], 
+        df_movie.loc[len(df_movie),:] = [int(movie_data['id']), movie_data['title'],
             movie_data['original_title'], movie_data['original_language'], genres_id , production_companies_id]
 
     return df_genre, df_prod_co, df_movie

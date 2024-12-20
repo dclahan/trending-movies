@@ -70,8 +70,8 @@ def uploadFileToS3(local_path, bucket_name, s3_path,
     logging.info('Copy "{}" to S3 bucket "{}" and path "{}"'.format(local_path, bucket_name, s3_path))
     # Upload the file
     s3_client = boto3.client('s3',
-                            aws_access_key_id=aws_access_key_id, 
-                            aws_secret_access_key=aws_secret_access_key, 
+                            aws_access_key_id=aws_access_key_id,
+                            aws_secret_access_key=aws_secret_access_key,
                             region_name=region_name
     )
     try:

@@ -13,7 +13,7 @@ glue job params
 '''
 
 def process_tmdb(glueContext, input_path, date):
-    """ 
+    """
     Reads raw TMDB movie data and
     selects relevant quantitative fields for given date
 
@@ -39,7 +39,7 @@ def process_tmdb(glueContext, input_path, date):
     return tmdb_stats
 
 def save_tmdb_stat(glueContext, tmdb_stats, output_path):
-    """ 
+    """
     Saves TMDB movie stats in Parquet format partitioned by year, month, and day
 
     Args:

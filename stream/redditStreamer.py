@@ -44,7 +44,7 @@ class RedditStreamListener:
     def listen(self):
         """ Listens to new posts and saves them to the database."""
         subreddit = self.reddit.subreddit(self.subreddits)
-        for submission in subreddit.stream.submissions(): 
+        for submission in subreddit.stream.submissions():
             if self.count % self.numReport == 0:
                 logging.info(f"Number of posts streamed since the start: {self.count}")
 

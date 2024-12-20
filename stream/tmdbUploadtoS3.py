@@ -14,7 +14,7 @@ from settings import dirTmdb, dirLogs, s3_bucket, s3_key_tmdb, s3_upload_try
 from utils import createDir, setupLogger, uploadFileToS3
 
 def initTmdb(api_key):
-    """ 
+    """
     Returns a TMDB object initialized with the given api key
 
     Args:
@@ -29,7 +29,7 @@ def initTmdb(api_key):
     return tmdb
 
 def getMovieIds(path):
-    """ 
+    """
     Read movie data (id, name, indentifier) and returns their id as list
 
     Args:
@@ -48,7 +48,7 @@ def getMovieIds(path):
     return movie_ids
 
 def queryMovieFromTmdb(movie_ids):
-    """ 
+    """
     Collect current movie data from tmdb api
 
     Args:
@@ -86,7 +86,7 @@ def queryMovieFromTmdb(movie_ids):
     return movies_data
 
 def getLocalPartitionedPath(dir_save, dt_save):
-    """ 
+    """
     Returns a partitioned directory and path based on the given datetime
 
     Args:
@@ -104,7 +104,7 @@ def getLocalPartitionedPath(dir_save, dt_save):
     return local_dir, local_path
 
 def getS3PartitionedPath(key_prefix, dt_save):
-    """ 
+    """
     Returns a partitioned S3 path based on the given datetime
 
     Args:
@@ -122,7 +122,7 @@ def getS3PartitionedPath(key_prefix, dt_save):
     return s3_path
 
 def saveTmdbLocal(movies_data, local_path):
-    """ 
+    """
     Saves raw tmdb movie data locally using the given path
 
     Args:
