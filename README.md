@@ -1,4 +1,4 @@
-# Dolan Clahan DataBase Final Project:
+# Dolan Clahan DataBase Final Project
 ### EDA for Movie Trend Analytics
 
 ## Introduction
@@ -91,14 +91,14 @@ Data Lake architecture on AWS Simple Storage Service (S3) is used to store both 
  `production_companies` table:
 | Column | Type | Description |
 | ------ | ---- | ----------- |
-| `id` | `int` | Network id | 
-| `name` | `string` | Network name |
-| `origin_country` | `string` | Network's country of origin |
+| `id` | `int` | Production company id | 
+| `name` | `string` | Production company name |
+| `origin_country` | `string` | Production company's country of origin |
 
 
 ## Data Pipeline
 
-Using AWS products to stream data into S3 buckets, and then perform ETL on that data.
+Using AWS products like AWS Lightsail, AWS Lambda to stream data into S3 buckets, and then perform ETL on that data using AWS Glue.
 
 ![image](/pics/workflow.jpg)
 
@@ -110,7 +110,7 @@ The data pipeline for this project involves automating data collection, processi
    - **Extraction**: Raw Reddit posts and TMDB data are extracted from the S3 bucket.
    - **Data Cleaning**: Corrupt or incorrectly stored values are identified and corrected. This step ensures the integrity and consistency of the data.
    - **Data Transformation**: The cleaned data is structured into fact tables and dimension tables for tracking daily movie mentions on Reddit, as well as populatrity metrics from TMDB. 
-   
+
 3. **Data Upload**: The transformed data, now conforming to the Entity-Relationship Diagram (ERD) outlined earlier, is uploaded back to the S3 bucket. This clean data is accessible via the S3 Web client and serves as the backend for the application, which visualizes daily movie trends from Reddit posts and TMDB popularity metrics.
 
 ## Data Visualization Dashboard
@@ -119,21 +119,21 @@ The application is built using the Bokeh library and Python. The Bokeh library p
 
 The application is designed to visualize the daily trends for each movie mentioned in a Reddit post over the past week. The implementation results in a dashboard that displays the number of mentions, popularity, and a ranking of the top movies mentioned in the past week. The dashboard is interactive and allows users to select a movie and a date range to view the trends for that movie.
 
-|![image](/pics/dashboard.png)|
-|*--*|
-|Dashboard View of Movie Trends|
+| ![image](/pics/dashboard.png) |
+|:--:|
+| Dashboard View of Movie Trends |
 
-|![image](/pics/wicked_stats.png)|
-|*--*|
-|Dashboard View of Movie Trends For the movie "Wicked", showing an increase in mentions and popularity over time.|
+| ![image](/pics/wicked_stats.png) |
+|:--:|
+| Dashboard View of Movie Trends For the movie "Wicked", showing an increase in mentions and popularity over time. |
 
-|![image](/pics/total_mentions.png)|
-|*--*|
-|Bar Chart showing the total number of mentions for each movie in the past week.|
+| ![image](/pics/total_mentions.png) |
+|:--:|
+| Bar Chart showing the total number of mentions for each movie in the past week. |
 
-|![image](/pics/top_20_mentions.png)|
-|*--*|
-|Summary of the top 20 movies mentioned in the past week.|
+| ![image](/pics/top_20_mentions.png) |
+|:--:|
+| Summary of the top 20 movies mentioned in the past week. |
 
 
 ## Business Applications
