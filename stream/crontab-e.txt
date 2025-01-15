@@ -1,0 +1,5 @@
+# this are the cron jobs set up in the aws lightsail instance, had to install miniconda as well with the dependencies, but works!
+
+10 */1 * * * sudo /home/ubuntu/miniconda3/bin/python3 /home/ubuntu/trending-movies/stream/redditStreamer.py >> /home/ubuntu/trending-movies/stream/outpStream.txt 2>&1
+2 */1 * * * sudo  /home/ubuntu/miniconda3/bin/python3 /home/ubuntu/trending-movies/stream/redditUploadtoS3.py /home/ubuntu/trending-movies/api.cfg >> /home/ubuntu/trending-movies/stream/outppostupload.txt 2>&1
+0 1 */1 * * sudo  /home/ubuntu/miniconda3/bin/python3 /home/ubuntu/trending-movies/stream/tmdbUploadtoS3.py /home/ubuntu/trending-movies/api.cfg /home/ubuntu/trending-movies/movies_list.csv >> /home/ubuntu/trending-movies/stream/outptmdbs3.txt 2>&1
