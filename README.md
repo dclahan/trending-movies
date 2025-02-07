@@ -1,5 +1,4 @@
-# Dolan Clahan DataBase Final Project
-### EDA for Movie Trend Analytics
+# Enterprise Data Architecture for Movie Trend Analytics
 
 ## Introduction
 Enterprises increasingly rely on data-driven decisions, blending structured and unstructured data to uncover insights and improve user experience. This project proposes developing an **Enterprise Data Architecture (EDA)** to analyze movie trends using structured data from **The Movie Database (TMDB)** and unstructured data from social media platforms such as **Twitter** and **Reddit**. The goal is to create an automated analytics pipeline that identifies popular and trending movies based on TMDB statistics and social media mentions.
